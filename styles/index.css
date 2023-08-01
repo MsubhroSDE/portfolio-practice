@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navbar_height: 7.2rem;
+  --navbar_background_color: lightpink;
+
+  --footer_background_color: lightgray;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+.navbar_box {
+  background: var(--navbar_background_color);
+  height: var(--navbar_height);
+  width: 100%;
+  padding: 0.5rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 2rem;
+}
+
+.main_app_box {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+}
+.app_section_box {
+  border: 2px solid red;
+  width: 90%;
+  min-height: calc(100vh - var(--navbar_height) - 2rem);
+}
+
+.footer_box {
+  background-color: var(--footer_background_color);
+}
