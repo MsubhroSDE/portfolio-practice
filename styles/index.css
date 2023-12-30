@@ -1,5 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@500;700&family=Work+Sans:wght@400;500&display=swap");
+
+/* =====================
+                        Default CSS starts
+                                          ===================== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
+
+:root {
+  --primary_color: #d16e4f;
+  --secondary_color: #dad048;
+  --helper_color: #77eb81;
+  --heading-color_dark: #251e25;
+  --heading-color_light: #726674;
+  --para-color_dark: #251e25;
+  --para-color_light: #726674;
+  --background_color_dark: #584839;
+  --background_color_light: #d4bca5;
+  --primary_gradient: (0deg, #ccf33d 0%, #f51c1c 100%);
+  --shadow_dark: 0 0 2rem 0 #54e727;
+  --shadow_light: 0 0 2rem 0 #fc92ee;
+}
+
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: var(--heading-color_dark);
+  font-weight: 800;
+  font-size: 3rem;
+}
+h2 {
+  color: var(--heading-color_dark);
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+h3 {
+  color: var(--heading-color_light);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+h4 {
+  color: var(--heading-color_light);
+  font-weight: 500;
+  font-size: 2.1rem;
+}
+p {
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+/* =====================
+                        Default CSS ends
+                                        ===================== */
+
+/* =====================
+                        Reuseable CSS Classes starts
+                                                    ===================== */
+.pl {
+  font-size: 2.1rem;
+  color: var(--para-color_dark);
+}
+.pm {
+  font-size: 1.8rem;
+  color: var(--para-color_dark);
+}
+.ps {
+  font-size: 2.1rem;
+  color: var(--para-color_light);
+}
+
+.primary_btn {
+}
+.secondary_btn {
+}
+
+/* =====================
+                        Reuseable CSS Classes ends
+                                                    ===================== */
+
+/* =====================
+                        Page and Section CSS starts
+                                                   ===================== */
+.section_box {
+}
+.sections {
+}
+
+/* =====================
+                        Page and Section CSS ends
+                                                   ===================== */
+
+/* =====================
+                        Header and Navbar CSS starts
+                                                    ===================== */
+/* font-family: 'Roboto', sans-serif; */
+
+/* =====================
+                        Header and Navbar CSS ends
+                                                  ===================== */
+
+/* =====================
+                        Home Section CSS starts
+                                               ===================== */
+
+/* =====================
+                        Home Section CSS ends
+                                             ===================== */
+
+/* =====================
+                        About Section CSS starts
+                                                ===================== */
+
+/* =====================
+                        About Section CSS ends
+                                              ===================== */
+
+/* =====================
+                        Projects Section CSS starts
+                                                   ===================== */
+
+/* =====================
+                        Projects Section CSS ends
+                                                 ===================== */
+
+/* =====================
+                        Blogs Section CSS starts
+                                                 ===================== */
+
+/* =====================
+                        Blogs Section CSS ends
+                                               ===================== */
+
+/* =====================
+                        Contact Section CSS starts
+                                                   ===================== */
+
+/* =====================
+                        Contact Section CSS ends
+                                                 ===================== */
+
+/* =====================
+                        Footer Section CSS starts
+                                                 ===================== */
+
+/* =====================
+                        Footer Section CSS ends
+                                               ===================== */
