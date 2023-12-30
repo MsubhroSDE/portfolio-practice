@@ -15,11 +15,11 @@
   --secondary_color: #dad048;
   --helper_color: #77eb81;
   --heading_color_dark: #2a580f;
-  --heading_color_light: #57f746;
+  --heading_color_light: #40793a;
   --para_color_dark: #5a045a;
   --para_color_light: #eeb6f8;
-  --background_color_dark: #584839;
-  --background_color_light: #d4bca5;
+  --background_color_dark: #ffdab8;
+  --background_color_light: #fdf9f5;
   --primary_gradient: linear-gradient(
     0deg,
     var(--primary_color) 0%,
@@ -135,9 +135,11 @@ li {
   gap: 2rem;
   padding: 2rem 4rem;
   border: var(--test_border);
+  background-color: var(--background_color_dark);
 }
 .sections {
   padding: 1rem 2rem;
+  background-color: var(--background_color_light);
 
   border: var(--test_border);
 }
@@ -236,9 +238,10 @@ li {
   border: var(--test_border);
 }
 .home_right_box img {
-  border: var(--test_border);
-
+  box-shadow: 1rem -1rem 0 0 var(--helper_color);
   width: 72%;
+
+  border: var(--test_border);
 }
 /* =====================
                         Home Section CSS ends
