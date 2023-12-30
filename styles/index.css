@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@500;700&family=Work+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Roboto:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap");
 
 /* =====================
                         Default CSS starts
@@ -16,13 +16,17 @@
   --helper_color: #77eb81;
   --heading_color_dark: #2a580f;
   --heading_color_light: #57f746;
-  --para_color_dark: #500950;
-  --para_color_light: #e06bf5;
+  --para_color_dark: #5a045a;
+  --para_color_light: #eeb6f8;
   --background_color_dark: #584839;
   --background_color_light: #d4bca5;
-  --primary_gradient: (0deg, #ccf33d 0%, #f51c1c 100%);
-  --shadow_dark: 0 0 2rem 0 #54e727;
-  --shadow_light: 0 0 2rem 0 #fc92ee;
+  --primary_gradient: linear-gradient(
+    0deg,
+    var(--primary_color) 0%,
+    var(--secondary_color) 100%
+  );
+  --primary_shadow: 0 0.9rem 1.2rem var(--primary_color);
+  --secondary_shadow: 0 0.2rem 2rem var(--secondary_color);
   --navbar_height: 9rem;
   --navbar_background_color: #c4c8fc;
   --primary_transition: 0.3s all ease-in-out;
@@ -45,25 +49,26 @@ h4 {
 h1 {
   color: var(--heading_color_dark);
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 4.5rem;
 }
 h2 {
   color: var(--heading_color_dark);
   font-weight: 700;
-  font-size: 2.7rem;
+  font-size: 3.3rem;
 }
 h3 {
   color: var(--heading_color_light);
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
 }
 h4 {
   color: var(--heading_color_light);
   font-weight: 500;
-  font-size: 2.1rem;
+  font-size: 1.8rem;
 }
 p {
   line-height: 1.6;
+  text-align: justify;
 }
 a {
   text-decoration: none;
@@ -81,19 +86,38 @@ li {
                                                     ===================== */
 .pl {
   font-size: 2.1rem;
+  font-weight: 600;
   color: var(--para_color_dark);
 }
 .pm {
   font-size: 1.8rem;
+  font-weight: 500;
   color: var(--para_color_dark);
 }
 .ps {
-  font-size: 2.1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: var(--para_color_light);
 }
 
 .primary_btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  background: var(--primary_gradient);
+  font-size: 1.5rem;
+  color: var(--para_color_light);
+  border: none;
+  text-transform: uppercase;
+  transition: var(--primary_transition);
 }
+.primary_btn:hover,
+.primary_btn:active {
+  font-weight: 700;
+  box-shadow: var(--primary_shadow);
+  color: var(--para_color_dark);
+}
+
 .secondary_btn {
 }
 
@@ -143,7 +167,7 @@ li {
   background-color: var(--navbar_background_color);
 }
 .logo_box a {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--primary_color);
@@ -166,7 +190,8 @@ li {
 .nav_link:visited {
   color: var(--heading_color_dark);
   font-family: "Roboto", sans-serif;
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 1.5rem;
   text-transform: uppercase;
   transition: var(--primary_transition);
 
@@ -187,7 +212,34 @@ li {
 /* =====================
                         Home Section CSS starts
                                                ===================== */
+.home_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.home_left_box {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+
+  border: var(--test_border);
+}
+
+.home_right_box {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+
+  border: var(--test_border);
+}
+.home_right_box img {
+  border: var(--test_border);
+
+  width: 72%;
+}
 /* =====================
                         Home Section CSS ends
                                              ===================== */
