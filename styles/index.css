@@ -14,16 +14,18 @@
   --primary_color: #d16e4f;
   --secondary_color: #dad048;
   --helper_color: #77eb81;
-  --heading-color_dark: #251e25;
-  --heading-color_light: #726674;
-  --para-color_dark: #251e25;
-  --para-color_light: #726674;
+  --heading_color_dark: #2a580f;
+  --heading_color_light: #57f746;
+  --para_color_dark: #500950;
+  --para_color_light: #e06bf5;
   --background_color_dark: #584839;
   --background_color_light: #d4bca5;
   --primary_gradient: (0deg, #ccf33d 0%, #f51c1c 100%);
   --shadow_dark: 0 0 2rem 0 #54e727;
   --shadow_light: 0 0 2rem 0 #fc92ee;
   --navbar_height: 9rem;
+  --navbar_background_color: #c4c8fc;
+  --primary_transition: 0.3s all ease-in-out;
 
   --test_border: 2px solid red;
 }
@@ -41,22 +43,22 @@ h4 {
 }
 
 h1 {
-  color: var(--heading-color_dark);
+  color: var(--heading_color_dark);
   font-weight: 800;
   font-size: 3rem;
 }
 h2 {
-  color: var(--heading-color_dark);
+  color: var(--heading_color_dark);
   font-weight: 700;
   font-size: 2.7rem;
 }
 h3 {
-  color: var(--heading-color_light);
+  color: var(--heading_color_light);
   font-weight: 600;
   font-size: 2.4rem;
 }
 h4 {
-  color: var(--heading-color_light);
+  color: var(--heading_color_light);
   font-weight: 500;
   font-size: 2.1rem;
 }
@@ -65,6 +67,9 @@ p {
 }
 a {
   text-decoration: none;
+}
+li {
+  list-style: none;
 }
 
 /* =====================
@@ -76,15 +81,15 @@ a {
                                                     ===================== */
 .pl {
   font-size: 2.1rem;
-  color: var(--para-color_dark);
+  color: var(--para_color_dark);
 }
 .pm {
   font-size: 1.8rem;
-  color: var(--para-color_dark);
+  color: var(--para_color_dark);
 }
 .ps {
   font-size: 2.1rem;
-  color: var(--para-color_light);
+  color: var(--para_color_light);
 }
 
 .primary_btn {
@@ -108,7 +113,6 @@ a {
   border: var(--test_border);
 }
 .sections {
-  min-height: calc(100vh - var(--navbar_height));
   padding: 1rem 2rem;
 
   border: var(--test_border);
@@ -121,7 +125,6 @@ a {
 /* =====================
                         Header and Navbar CSS starts
                                                     ===================== */
-/* font-family: 'Roboto', sans-serif; */
 
 .header_box {
   max-height: var(--navbar_height);
@@ -130,32 +133,51 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--navbar_background_color);
 
   border: var(--test_border);
 }
 .logo_box {
   padding: 1rem 2rem;
-
-  border: var(--test_border);
+  border: 0.3rem solid var(--secondary_color);
+  background-color: var(--navbar_background_color);
 }
 .logo_box a {
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--primary_color);
+  background-color: var(--navbar_background_color);
 }
 .logo_box a span {
+  padding: 0 1rem;
+  color: var(--navbar_background_color);
+  background-color: var(--primary_color);
 }
 .nav_menu_box {
   padding: 1rem 2rem;
+  display: flex;
+  gap: 3rem;
 
   border: var(--test_border);
 }
-.nav_menu_box ul {
-  display: flex;
-  gap: 3rem;
-}
-.nav_menu_box ul li {
-  list-style: none;
+
+.nav_link:link,
+.nav_link:visited {
+  color: var(--heading_color_dark);
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  transition: var(--primary_transition);
+
   border: var(--test_border);
 }
-.nav_link {
+
+.nav_link:hover,
+.nav_link:active {
+  color: var(--heading_color_light);
+
+  border: var(--test_border);
 }
 
 /* =====================
