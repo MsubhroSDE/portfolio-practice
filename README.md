@@ -5,6 +5,12 @@ Portfolio Website of Subhro Mukherjee.
 
 This Website is build using HTML, CSS and VanillaJS.
 
+===================== Pending Tasks ===============================
+
+- navbar a links
+- hero social links
+- hero js logic to write text effect
+
 Project Overview
 
 /////////////////////////////////

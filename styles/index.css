@@ -18,7 +18,7 @@ body {
   --primary_color: #3b3474;
   --secondary_color: #8f4c4c;
   --background_color_dark: #daabab;
-  --background_color_dark: #ffe8e8;
+  --background_color_light: #ffe8e8;
   --primary_helper_color: #e6dd61;
   --secondary_helper_color: #4dd864;
   --primary_box_shadow: 0 0 0.5rem #d83a7c;
@@ -126,12 +126,14 @@ a {
 .main_box {
   border: var(--test_border);
 
+  background-color: var(--background_color_dark);
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 1rem 2rem;
 }
 .section_box {
+  background-color: var(--background_color_light);
   border: var(--test_border);
   min-height: calc(100vh - var(--navbar_height) - var(--footer_height) - 3rem);
   padding: 1rem 3rem;
@@ -185,7 +187,44 @@ a {
 ====================================== */
 
 .hero_section_box {
-  background-color: #4dd864;
+  border: var(--test_border);
+
+  min-height: calc(100vh - var(--navbar_height) - 3rem);
+}
+
+.hero_intro_box {
+  border: var(--test_border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+.hero_intro_box h2 {
+}
+.hero_intro_box h1 {
+}
+.hero_intro_box h1 span {
+  color: red;
+}
+
+.hero_intro_box h3 {
+}
+.hero_intro_box p {
+  text-align: center;
+}
+
+.hero_social_links_box {
+  border: var(--test_border);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.hero_social_links_box a {
+  font-size: 3rem;
 }
 
 /* ======================================
