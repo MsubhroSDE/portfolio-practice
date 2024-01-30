@@ -82,11 +82,13 @@ p {
 .logo_box {
 }
 .logo_box a {
+  text-transform: capitalize;
 }
 .logo_box a span {
 }
 
 .section_box {
+  padding: 2rem 4rem;
   background-color: var(--background_dark_color);
 }
 .section {
