@@ -2,5 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #b5e6f7;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Fjalla One", sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --heading_dark_color: #0b0c0c;
+  --heading_light_color: #212529;
+  --para_dark_color: #030e1d;
+  --para_light_color: #06284d;
+  --background_dark_color: #f5e18b;
+  --background_light_color: #e2abf8;
+  --primary_helper_color: #3dff94;
+  --primary_gradient: linear-gradient(0deg, #4929ff 0%, #ffff00 100%);
+  --primary_shadow: 2rem 2rem 2rem #ff0000;
+
+  --navbar_dark_color: #3729f1;
+  --navbar_light_color: #2bc8f0;
+  --navbar_height: 7rem;
+
+  --footer_dark_color: #190620;
+  --footer_light_color: #6a1f88;
+}
+
+h1 {
 }
