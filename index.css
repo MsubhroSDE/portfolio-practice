@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  /* font-family: "Fjalla One", sans-serif; */
   font-family: "Poppins", sans-serif;
 }
 
@@ -32,5 +31,55 @@ body {
   --footer_light_color: #6a1f88;
 }
 
-h1 {
+a {
+  text-decoration: none;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fjalla One", sans-serif;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 3rem;
+}
+p {
+  line-height: 1.8;
+}
+
+/*=============================================
+        Reuseable Classes
+===============================================*/
+.para_big {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.para_medium {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.para_small {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.section_box {
+  background-color: var(--background_dark_color);
+}
+.section {
+  background-color: var(--background_light_color);
+}
+
+/*=============================================
+        Navbar Classes
+===============================================*/
