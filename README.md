@@ -7,9 +7,25 @@ This Website is build using HTML, CSS and VanillaJS.
 
 ===================== Pending Tasks ===============================
 
-- decide page structure
-- integrate html, css & js
-- start the development
+# Phase 1
+
+    1.1 Simple website no js & fancy css
+    1.2 spa - nav, hero, about, project, freelance, contact & footer
+    1.3 download cv & contact form should be functional.
+    1.4 Same page heading, one button css & color finalize
+    1.5 Responsive for mobile
+
+# Navbar
+
+    1.1 simple navbar - ((logo)         (about project blogs contact))
+    1.2 all links to same page (sticky & smooth scroll)
+
+# Hero
+
+    1.1 left side - (hi , name, intro, button (contact me), social links )
+    1.2 right side - (my image with some animation)
+    * scroll to top button
+    * social links will be custom colored
 
 /////////////////////////////////
 Home Page
