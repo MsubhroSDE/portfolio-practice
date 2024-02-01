@@ -23,6 +23,11 @@ html {
   --para_color_dark: saddlebrown;
   --para_color_light: seagreen;
 
+  --navbar_height: 7rem;
+  --navbar_color_dark: darkgreen;
+  --navbar_color_light: springgreen;
+  --navbar_background: tomato;
+
   --test_border: 2px solid red;
 }
 
@@ -30,7 +35,7 @@ html {
       Reset Defaults
 ========================================================= */
 body {
-  color: seagreen;
+  color: springgreen;
 }
 
 h1,
@@ -74,7 +79,7 @@ a {
 .logo_link {
   font-size: 2.5rem;
   font-weight: 500;
-  color: red;
+  color: snow;
 }
 
 .para_large {
@@ -90,4 +95,54 @@ a {
 .para_large {
   font-size: 2.5rem;
   font-weight: 500;
+}
+
+.transition_fast {
+  transition: all 0.3s linear;
+}
+.transition_medium {
+  transition: all 0.5s linear;
+}
+.transition_slow {
+  transition: all 0.7s ease-in-out;
+}
+
+/* =========================================================
+      Navbar Section Starts
+========================================================= */
+.navbar_box {
+  border: var(--test_border);
+
+  background-color: var(--navbar_background);
+  height: var(--navbar_height);
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo_box {
+  border: var(--test_border);
+
+  font-size: 3rem;
+}
+
+.navbar_menu_box {
+  border: var(--test_border);
+
+  display: flex;
+  gap: 3rem;
+}
+
+.navbar_links {
+  border: var(--test_border);
+
+  color: var(--navbar_color_dark);
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.navbar_links:hover {
+  color: var(--navbar_color_light);
 }
