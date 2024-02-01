@@ -23,10 +23,18 @@ html {
   --para_color_dark: saddlebrown;
   --para_color_light: seagreen;
 
+  --helper_color: hotpink;
+
+  --primary_gradient: linear-gradient(
+    90deg,
+    var(--primary_color) 0%,
+    var(--secondary_color) 100%
+  );
+
   --navbar_height: 7rem;
   --navbar_color_dark: darkgreen;
   --navbar_color_light: springgreen;
-  --navbar_background: tomato;
+  --navbar_background: tan;
 
   --test_border: 2px solid red;
 }
@@ -35,18 +43,22 @@ html {
       Reset Defaults
 ========================================================= */
 body {
-  color: springgreen;
+  color: lightcoral;
+
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
+  font-family: "Poppins", sans-serif;
 }
 h1 {
-  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 6rem;
   font-weight: 700;
-  color: var(--heading_color_dark);
+  color: red;
 }
 h2 {
   font-size: 3rem;
@@ -54,13 +66,18 @@ h2 {
   color: var(--heading_color_dark);
 }
 h3 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 2.4rem;
+  font-weight: 600;
   color: var(--heading_color_dark);
 }
 h4 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--heading_color_dark);
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
   color: var(--heading_color_dark);
 }
 
@@ -77,24 +94,45 @@ a {
       Reuseable Class
 ========================================================= */
 .logo_link {
-  font-size: 2.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 3rem;
   font-weight: 500;
+  text-transform: uppercase;
   color: snow;
+}
+.logo_link:hover {
+  text-shadow: 0.1rem 0.1rem 0.3rem gold;
 }
 
 .para_large {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 500;
 }
 
 .para_medium {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
-.para_large {
-  font-size: 2.5rem;
+.para_small {
+  font-size: 1.2rem;
   font-weight: 500;
+}
+
+.primary_button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--primary_gradient);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--para_color_dark);
+  transition: all 0.5s ease-in-out;
+}
+.primary_button:hover {
+  color: var(--para_color_light);
+  box-shadow: 0 0.3rem 1rem var(--para_color_dark);
 }
 
 .transition_fast {
@@ -107,6 +145,25 @@ a {
   transition: all 0.7s ease-in-out;
 }
 
+.main_section_box {
+  border: var(--test_border);
+
+  background-color: var(--background_color_dark);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem;
+}
+
+.section_box {
+  border: var(--test_border);
+
+  background-color: var(--background_color_light);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.69rem var(--background_color_light),
+    -0.3rem -0.3rem 0.69rem var(--background_color_light);
+}
 /* =========================================================
       Navbar Section Starts
 ========================================================= */
@@ -137,12 +194,68 @@ a {
 .navbar_links {
   border: var(--test_border);
 
+  font-family: "Poppins", sans-serif;
   color: var(--navbar_color_dark);
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
 .navbar_links:hover {
   color: var(--navbar_color_light);
+}
+
+/* =========================================================
+      Hero Section Starts
+========================================================= */
+
+.hero_section_box {
+  border: var(--test_border);
+
+  min-height: calc(100vh - var(--navbar_height) - 6rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_left_box {
+  border: var(--test_border);
+
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.hero_intro_box {
+  border: var(--test_border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero_social_links_box {
+  border: var(--test_border);
+
+  display: flex;
+  gap: 3rem;
+}
+
+.hero_buttons_box {
+}
+
+.hero_right_box {
+  border: var(--test_border);
+
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_right_box img {
+  width: 70%;
 }
