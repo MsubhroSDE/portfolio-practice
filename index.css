@@ -36,16 +36,19 @@ html {
   --navbar_color_light: springgreen;
   --navbar_background: tan;
 
-  --test_border: 2px solid red;
+  --footer_color_dark: gold;
+  --footer_color_light: yellow;
+  --footer_background: slategrey;
+
+  /* --test_border: 2px solid red; */
 }
 
 /* =========================================================
       Reset Defaults
 ========================================================= */
 body {
-  color: lightcoral;
-
   font-family: "Roboto", sans-serif;
+  color: ;
 }
 
 h1,
@@ -95,7 +98,6 @@ a {
 ========================================================= */
 .logo_link {
   font-family: "Oswald", sans-serif;
-  font-size: 3rem;
   font-weight: 500;
   text-transform: uppercase;
   color: snow;
@@ -105,17 +107,17 @@ a {
 }
 
 .para_large {
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .para_medium {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .para_small {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 500;
 }
 
@@ -257,5 +259,171 @@ a {
 }
 
 .hero_right_box img {
-  width: 70%;
+  width: 72%;
+}
+
+/* =========================================================
+      About Section Starts
+========================================================= */
+
+.about_section {
+  border: var(--test_border);
+
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about_top_box {
+  border: var(--test_border);
+
+  width: 100%;
+}
+
+.about_left_box {
+  border: var(--test_border);
+
+  width: 55%;
+}
+
+.about_intro_box {
+}
+
+.about_key_skills_box {
+}
+
+.about_right_box {
+  border: var(--test_border);
+
+  width: 40%;
+}
+
+.about_key_expertise_box {
+}
+
+.about_list_divider {
+  border: var(--test_border);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_list_divider ul {
+  border: var(--test_border);
+
+  padding-left: 3rem;
+  width: 45%;
+}
+.about_list_divider ul li {
+  margin-bottom: 0.3rem;
+}
+
+.about_education_box {
+}
+
+/* =========================================================
+      Footer Section Starts
+========================================================= */
+
+.footer_box {
+  border: var(--test_border);
+
+  background-color: var(--footer_background);
+  padding: 1rem 3rem;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer_left_box {
+  border: var(--test_border);
+
+  width: 40%;
+}
+
+.footer_logo_box {
+  font-size: 3.69rem;
+}
+
+.footer_middle_box {
+  border: var(--test_border);
+
+  width: 30%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_links_box {
+  border: var(--test_border);
+
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer_links_box a {
+  color: var(--footer_color_dark);
+  transition: all 0.3s linear;
+}
+
+.footer_links_box a:hover {
+  color: var(--footer_color_light);
+}
+
+.footer_right_box {
+  border: var(--test_border);
+
+  width: 25%;
+}
+
+.footer_contact_box {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.footer_contact_box a,
+address {
+  color: var(--footer_color_dark);
+  transition: all 0.3s linear;
+}
+
+.footer_contact_box a:hover {
+  color: var(--footer_color_light);
+}
+
+.footer_social_links_box {
+  display: flex;
+  margin-top: 3rem;
+  gap: 3rem;
+}
+
+.footer_bottom_box {
+  border: var(--test_border);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+.footer_credit {
+  color: var(--footer_color_light);
+}
+.footer_credit span {
+  color: red;
+}
+
+.footer_credit a {
+  color: var(--footer_color_light);
+}
+.footer_credit a:hover {
+  color: var(--footer_color_dark);
+}
+
+.footer_copyright {
+  color: var(--footer_color_dark);
+}
+.footer_copyright span {
+  color: red;
 }
