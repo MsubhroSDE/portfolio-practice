@@ -1,6 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: hsl(180, 100%, 96%);
+  font-family: "Roboto", sans-serif;
 }
+
+:root {
+  --navbar_background: hsl(200, 100%, 90%);
+  --navbar_color_dark: hsl(240, 100%, 5%);
+  --navbar_color_light: hsl(230, 100%, 25%);
+  --navbar_height: 7rem;
+}
+
+/* =================================================================
+   Reset Defaults Starts
+   ================================================================= */
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* =================================================================
+   Reset Defaults Ends
+   ================================================================= */
+
+/* =================================================================
+   Responsive Font Sizes Starts
+   ================================================================= */
+
+/* =================================================================
+   Responsive Font Sizes Ends
+   ================================================================= */
+
+/* =================================================================
+   Reuseable Classes Starts
+   ================================================================= */
+.logo_link {
+  font-family: "Sofia", sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+  transition: all 0.3s linear;
+}
+.logo_link:hover {
+  font-weight: 600;
+}
+
+/* =================================================================
+   Reuseable Classes Ends
+   ================================================================= */
+
+/* =================================================================
+   Navbar Section Starts
+   ================================================================= */
+
+.navbar_box {
+  background-color: var(--navbar_background);
+  height: var(--navbar_height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.navbar_logo a {
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+}
+.navbar_menu_box {
+  display: flex;
+  gap: 3rem;
+}
+.navbar_menu_links:link,
+.navbar_menu_links:visited {
+  color: var(--navbar_color_dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.navbar_menu_links:hover,
+.navbar_menu_links:active {
+  color: var(--navbar_color_light);
+}
+
+/* =================================================================
+   Navbar Section Ends
+   ================================================================= */
