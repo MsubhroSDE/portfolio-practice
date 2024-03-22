@@ -30,6 +30,10 @@
   );
   --button_shadow: 0 0.6rem 0.3rem gray;
 
+  --footer_background: hsl(200, 100%, 90%);
+  --footer_color_dark: hsl(240, 100%, 5%);
+  --footer_color_light: hsl(230, 100%, 25%);
+
   --test-border: 2px solid red;
 }
 
@@ -556,4 +560,32 @@ textarea:focus {
 }
 /* =================================================================
    Contact Me Section Ends
+   ================================================================= */
+
+/* =================================================================
+   Footer Section Starts
+   ================================================================= */
+
+.footer_box {
+  background-color: var(--footer_background);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.footer_copyright {
+  width: 100%;
+}
+.footer_copyright h6 {
+  color: var(--footer_color_dark);
+  text-align: center;
+}
+.footer_copyright p {
+  color: var(--footer_color_light);
+  text-align: center;
+}
+
+/* =================================================================
+   Footer Section Ends
    ================================================================= */
