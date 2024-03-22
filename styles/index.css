@@ -12,6 +12,25 @@
   --navbar_color_dark: hsl(240, 100%, 5%);
   --navbar_color_light: hsl(230, 100%, 25%);
   --navbar_height: 7rem;
+
+  --heading_color_dark: hsl(0, 30%, 15%);
+  --heading_color_light: hsl(0, 30%, 30%);
+  --para_color_dark: hsl(0, 0%, 15%);
+  --para_color_light: hsl(0, 0%, 30%);
+  --background_color_dark: hsl(3, 100%, 90%);
+  --background_color_light: hsl(3, 100%, 95%);
+
+  --primary_helper_color: aqua;
+  --secondary_helper_color: hotpink;
+
+  --primary_linear_gradient: linear-gradient(
+    to bottom right,
+    var(--primary_helper_color),
+    var(--secondary_helper_color)
+  );
+  --button_shadow: 0 0.6rem 0.3rem gray;
+
+  --test-border: 2px solid red;
 }
 
 /* =================================================================
@@ -20,6 +39,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 a {
@@ -32,6 +52,7 @@ li {
 
 p {
   line-height: 1.6;
+  text-align: justify;
 }
 
 h1,
@@ -43,6 +64,36 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  color: var(--heading_color_dark);
+}
+h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--heading_color_dark);
+}
+h3 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: var(--heading_color_light);
+}
+h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--heading_color_dark);
+}
+h5 {
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: var(--heading_color_light);
+}
+h6 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--heading_color_dark);
+}
 /* =================================================================
    Reset Defaults Ends
    ================================================================= */
@@ -62,12 +113,50 @@ h6 {
   font-family: "Sofia", sans-serif;
   text-transform: capitalize;
   font-weight: 300;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
 }
 .logo_link:hover {
   font-weight: 600;
 }
 
+.para_xl {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--para_color_light);
+}
+.para_l {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: var(--para_color_dark);
+}
+.para_m {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--para_color_light);
+}
+.para_s {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--para_color_dark);
+}
+.para_xs {
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: var(--para_color_light);
+}
+
+.primary_button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  background: var(--primary_linear_gradient);
+  outline: none;
+  transition: all 0.3s linear;
+}
+.primary_button:hover,
+.primary_button:active {
+  box-shadow: var(--button_shadow);
+}
 /* =================================================================
    Reuseable Classes Ends
    ================================================================= */
@@ -108,4 +197,84 @@ h6 {
 
 /* =================================================================
    Navbar Section Ends
+   ================================================================= */
+
+/* =================================================================
+   Main App Starts
+   ================================================================= */
+.main_app_box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 3rem;
+  background: var(--background_color_dark);
+}
+
+.section_box {
+  min-height: calc(100vh - var(--navbar_height) - 2rem);
+  background: var(--background_color_light);
+  box-shadow: 0 0 0.3rem var(--background_color_light);
+  padding: 1rem;
+  border-radius: 1.2rem;
+}
+/* =================================================================
+   Main App Ends
+   ================================================================= */
+
+/* =================================================================
+   Hero Section Starts
+   ================================================================= */
+.hero_section_box {
+  border: var(--test-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_content_box {
+  border: var(--test-border);
+
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+}
+
+.hero_intro_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.hero_social_links_box {
+  border: var(--test-border);
+
+  display: flex;
+  gap: 3rem;
+}
+.hero_social_links_box a {
+  font-size: 2.1rem;
+}
+.hero_buttons_box {
+  border: var(--test-border);
+
+  display: flex;
+  gap: 3rem;
+}
+
+.hero_image_box {
+  border: var(--test-border);
+
+  width: 30%;
+}
+
+.hero_image_box img {
+  width: 75%;
+  display: block;
+  margin: auto;
+}
+/* =================================================================
+   Hero Section Ends
    ================================================================= */
