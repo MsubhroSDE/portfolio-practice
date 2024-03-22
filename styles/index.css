@@ -16,7 +16,7 @@
   --heading_color_dark: hsl(0, 30%, 15%);
   --heading_color_light: hsl(0, 30%, 30%);
   --para_color_dark: hsl(0, 0%, 15%);
-  --para_color_light: hsl(0, 0%, 30%);
+  --para_color_light: hsl(0, 0%, 60%);
   --background_color_dark: hsl(3, 100%, 90%);
   --background_color_light: hsl(3, 100%, 95%);
 
@@ -70,27 +70,27 @@ h1 {
   color: var(--heading_color_dark);
 }
 h2 {
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 800;
   color: var(--heading_color_dark);
 }
 h3 {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--heading_color_light);
 }
 h4 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 600;
   color: var(--heading_color_dark);
 }
 h5 {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 900;
   color: var(--heading_color_light);
 }
 h6 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: var(--heading_color_dark);
 }
@@ -120,33 +120,35 @@ h6 {
 }
 
 .para_xl {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: var(--para_color_light);
 }
 .para_l {
-  font-size: 2.1rem;
+  font-size: 1.8rem;
   font-weight: 500;
   color: var(--para_color_dark);
 }
 .para_m {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
-  color: var(--para_color_light);
+  color: var(--para_color_dark);
 }
 .para_s {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 300;
   color: var(--para_color_dark);
 }
 .para_xs {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 100;
   color: var(--para_color_light);
 }
 
 .primary_button {
   font-size: 1.5rem;
+  color: var(--para_color_dark);
+  font-weight: 700;
   padding: 1rem 2rem;
   border-radius: 0.3rem;
   background: var(--primary_linear_gradient);
@@ -217,6 +219,11 @@ h6 {
   padding: 1rem;
   border-radius: 1.2rem;
 }
+
+.main_page_heading {
+  border: var(--test-border);
+  width: 100%;
+}
 /* =================================================================
    Main App Ends
    ================================================================= */
@@ -277,4 +284,63 @@ h6 {
 }
 /* =================================================================
    Hero Section Ends
+   ================================================================= */
+
+/* =================================================================
+   About Me Section Starts
+   ================================================================= */
+
+.about_section_box {
+  border: var(--test-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.about_intro_box {
+  border: var(--test-border);
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about_intro_para {
+}
+
+.about_intro_points {
+}
+.intro_points_list {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.intro_points_list li {
+  list-style: disc;
+}
+
+.about_expertise_box {
+  border: var(--test-border);
+
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.about_expertise_skills {
+}
+
+.about_skills_box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+/* =================================================================
+   About Me Section Ends
    ================================================================= */
