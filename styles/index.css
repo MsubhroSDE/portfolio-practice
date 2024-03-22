@@ -410,3 +410,76 @@ h6 {
 /* =================================================================
    My Projects Section Ends
    ================================================================= */
+
+/* =================================================================
+   My Blogs Section Ends
+   ================================================================= */
+
+.blog_section_box {
+  border: var(--test-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.blogs_filter_box {
+  width: 100%;
+}
+.blogs_cards_box {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.blog_card {
+  border: var(--test-border);
+
+  width: 30%;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.3rem var(--primary_helper_color);
+  overflow: hidden;
+  position: relative;
+}
+.blog_card img {
+  height: 12rem;
+  width: 100%;
+}
+.blog_card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.3rem 1rem;
+}
+
+.blog_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background: var(--primary_linear_gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateY(100%);
+  transition: all 0.3s linear;
+}
+
+.blog_card:hover .blog_card_overlay {
+  transform: translateY(0);
+  /* transform: translateY(100%); */
+  cursor: pointer;
+}
+
+/* =================================================================
+   My Blogs Section Ends
+   ================================================================= */
