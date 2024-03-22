@@ -146,6 +146,9 @@ h6 {
 }
 
 .primary_button {
+  display: inline-block;
+  width: 15rem;
+  text-align: center;
   font-size: 1.5rem;
   color: var(--para_color_dark);
   font-weight: 700;
@@ -364,4 +367,46 @@ h6 {
 }
 /* =================================================================
    About Me Section Ends
+   ================================================================= */
+
+/* =================================================================
+   My Projects Section Starts
+   ================================================================= */
+
+.project_section_box {
+  border: var(--test-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project_cards_box {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.project_card {
+  border: var(--test-border);
+
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.3rem var(--primary_helper_color);
+  position: relative;
+}
+
+/* =================================================================
+   My Projects Section Ends
    ================================================================= */
