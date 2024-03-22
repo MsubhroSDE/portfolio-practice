@@ -156,6 +156,7 @@ h6 {
   border-radius: 0.3rem;
   background: var(--primary_linear_gradient);
   outline: none;
+  border: none;
   transition: all 0.3s linear;
 }
 .primary_button:hover,
@@ -482,4 +483,55 @@ h6 {
 
 /* =================================================================
    My Blogs Section Ends
+   ================================================================= */
+
+/* =================================================================
+   Contact Me Section Starts
+   ================================================================= */
+.contact_section_box {
+  border: var(--test-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact_info_box {
+  border: var(--test-border);
+
+  width: 45%;
+}
+
+.contact_form_box {
+  border: var(--test-border);
+
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contact_form_box input,
+textarea {
+  width: 100%;
+  outline: none;
+  border: 0.1rem solid var(--primary_helper_color);
+  border-radius: 0.3rem;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.5rem;
+  color: var(--para_color_light);
+  transition: all 0.3s linear;
+}
+
+.contact_form_box input:focus,
+textarea:focus {
+  border: 0.1rem solid var(--secondary_helper_color);
+  color: var(--para_color_dark);
+}
+/* =================================================================
+   Contact Me Section Ends
    ================================================================= */
