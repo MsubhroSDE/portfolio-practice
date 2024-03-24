@@ -19,11 +19,11 @@
   --navbar_height: 7rem;
 
   --background_color_dark: #a7ff9f;
-  --background_color_light: #f9facc;
+  --background_color_light: #fffff0;
 
-  --heading_color_dark: #020258;
+  --heading_color_dark: #2e0258;
   --heading_color_light: #232377;
-  --para_color_dark: #420101;
+  --para_color_dark: #014237;
   --para_color_light: #813232;
 
   --primary_helper_color: aqua;
@@ -215,9 +215,9 @@ h1 {
 }
 
 .section_heading {
-  font-size: 3.6rem;
-  font-weight: 900;
-  color: var(--heading_color_dark);
+  border: var(--test_border);
+
+  width: 100%;
   position: relative;
 }
 
@@ -288,6 +288,67 @@ h1 {
 }
 /* =========================================================
               Hero Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            About Me Section Starts  
+========================================================= */
+.about_section_box {
+  border: var(--test_border);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.about_intro_box {
+  border: var(--test_border);
+
+  width: 50%;
+}
+
+.about_skills_box {
+  border: var(--test_border);
+
+  width: 45%;
+}
+
+.skills_list {
+}
+
+.skills_list_box {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.5rem;
+}
+/* =========================================================
+              About Me Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            New Section Starts  
+========================================================= */
+
+/* =========================================================
+              New Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            New Section Starts  
+========================================================= */
+
+/* =========================================================
+              New Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            New Section Starts  
+========================================================= */
+
+/* =========================================================
+              New Section Ends  
   ========================================================= */
 
 /* =========================================================
