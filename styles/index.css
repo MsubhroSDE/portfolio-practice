@@ -367,7 +367,7 @@ h1 {
   ========================================================= */
 
 /* =========================================================
-            New Section Starts  
+            My Services Section Starts  
 ========================================================= */
 .services_section_box {
   border: var(--test_border);
@@ -409,21 +409,136 @@ h1 {
   text-align: center;
 }
 /* =========================================================
-              Freelance Section Ends  
+              My Services Section Ends  
   ========================================================= */
-.freelance_section_box {
-  border: var(--test_border);
 
-  font-size: 3rem;
-  padding: 5rem;
-  text-align: center;
-}
 /* =========================================================
             Freelance Section Starts  
 ========================================================= */
+.freelance_section_box {
+  border: var(--test_border);
+
+  padding: 5rem;
+  text-align: center;
+  background: var(--background_color_light);
+}
+/* =========================================================
+              Freelance Section Ends  
+  ========================================================= */
 
 /* =========================================================
-              New Section Ends  
+            My Blogs Section Starts  
+========================================================= */
+.blogs_section_box {
+  border: var(--test_border);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.blogs_filter_box {
+  border: var(--test_border);
+
+  width: 100%;
+}
+
+.blogs_card_box {
+  border: var(--test_border);
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.blog_card {
+  border: var(--test_border);
+
+  width: 30%;
+  min-height: 21rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.blog_card img {
+  width: 100%;
+  height: 12rem;
+}
+
+.blog_card h3 {
+  padding: 0.6rem 1.5rem;
+  text-align: justify;
+}
+
+/* =========================================================
+              My Blogs Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            Contact Me Section Starts  
+========================================================= */
+.contact_section_box {
+  border: var(--test_border);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+.contact_info_box {
+  border: var(--test_border);
+
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact_form_box {
+  border: var(--test_border);
+
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact_form_box input[type="text"],
+textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  color: var(--para_color_dark);
+  border: 0.15rem solid var(--shadow_color_light);
+  background: transparent;
+}
+.contact_form_box input[type="text"]:focus,
+textarea:focus {
+  color: var(--para_color_light);
+  border: 0.15rem solid var(--shadow_color_dark);
+}
+.contact_form_box input[type="submit"] {
+  width: 100%;
+}
+
+/* =========================================================
+              Contact Me Section Ends  
   ========================================================= */
 
 /* =========================================================
