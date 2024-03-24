@@ -16,7 +16,7 @@
   --navbar_background: #fab5ee;
   --navbar_color_dark: #002633;
   --navbar_color_light: #00698b;
-  --navbar_height: 7rem;
+  --navbar_height: 7.2rem;
 
   --background_color_dark: #a7ff9f;
   --background_color_light: #fffff0;
@@ -37,6 +37,10 @@
     var(--primary_helper_color),
     var(--secondary_helper_color)
   );
+
+  --footer_background: #373342;
+  --footer_color_dark: #00b6f3;
+  --footer_color_light: #c9ff82;
 
   --test_border: 2px solid red;
 }
@@ -154,6 +158,7 @@ h1 {
 .navbar_box {
   border: var(--test_border);
 
+  height: var(--navbar_height);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -542,9 +547,30 @@ textarea:focus {
   ========================================================= */
 
 /* =========================================================
-            New Section Starts  
+            Footer Section Starts  
 ========================================================= */
+.footer_box {
+  border: var(--test_border);
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--footer_background);
+}
+
+.footer_copyright_box {
+  width: 100%;
+}
+
+.footer_copyright_box h3 {
+  color: var(--footer_color_dark);
+  text-align: center;
+}
+.footer_copyright_box p {
+  color: var(--footer_color_light);
+  text-align: center;
+}
 /* =========================================================
-              New Section Ends  
+              Footer Section Ends  
   ========================================================= */
