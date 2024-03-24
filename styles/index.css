@@ -13,18 +13,30 @@
 ========================================================= */
 
 :root {
-  --navbar_background: #e0fab5;
+  --navbar_background: #fab5ee;
   --navbar_color_dark: #002633;
   --navbar_color_light: #00698b;
   --navbar_height: 7rem;
 
-  --background_color_dark: #ffa69f;
-  --background_color_light: #facfcc;
+  --background_color_dark: #a7ff9f;
+  --background_color_light: #f9facc;
 
-  --heading_color_dark: #08081f;
-  --heading_color_light: #15153d;
-  --para_color_dark: #1f0505;
-  --para_color_light: #311919;
+  --heading_color_dark: #020258;
+  --heading_color_light: #232377;
+  --para_color_dark: #420101;
+  --para_color_light: #813232;
+
+  --primary_helper_color: aqua;
+  --secondary_helper_color: yellow;
+
+  --shadow_color_dark: #1a3018;
+  --shadow_color_light: #666651;
+
+  --primary_linear_gradient: linear-gradient(
+    to bottom right,
+    var(--primary_helper_color),
+    var(--secondary_helper_color)
+  );
 
   --test_border: 2px solid red;
 }
@@ -57,6 +69,11 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+}
 /* =========================================================
               Reset Defaults Ends  
   ========================================================= */
@@ -74,6 +91,59 @@ h6 {
   font-weight: 600;
 }
 
+.primary_button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+  color: var(--heading_color_dark);
+  background: var(--primary_linear_gradient);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.primary_button:hover,
+.primary_button:active {
+  box-shadow: 0 0.36rem 0.3rem var(--shadow_color_dark);
+}
+
+.heading_large {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: var(--heading_color_dark);
+}
+.heading_medium {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--heading_color_light);
+}
+.heading_small {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--heading_color_dark);
+}
+
+.para_large {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: justify;
+  color: var(--para_color_dark);
+}
+.para_medium {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: justify;
+  color: var(--para_color_light);
+}
+.para_small {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: justify;
+  color: var(--para_color_dark);
+}
 /* =========================================================
               Reuseable Classes Ends  
   ========================================================= */
@@ -121,19 +191,103 @@ h6 {
   ========================================================= */
 
 /* =========================================================
-            New Section Starts  
+            Main App Section Starts  
 ========================================================= */
+.main_app_container {
+  border: var(--test_border);
+
+  background: var(--background_color_dark);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.app_section_container {
+  border: var(--test_border);
+
+  min-height: calc(100vh - var(--navbar_height) - 3rem);
+  background: var(--background_color_light);
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1rem var(--background_color_light);
+  padding: 1rem 2rem;
+}
+
+.section_heading {
+  font-size: 3.6rem;
+  font-weight: 900;
+  color: var(--heading_color_dark);
+  position: relative;
+}
+
+.section_heading::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 1.2rem;
+  width: 1.2rem;
+  background: var(--heading_color_light);
+}
+.section_heading::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 0.3rem;
+  width: 21rem;
+  background: var(--heading_color_light);
+}
 
 /* =========================================================
-              New Section Ends  
+              Main App Section Ends  
   ========================================================= */
 
 /* =========================================================
-            New Section Starts  
+            Hero Section Starts  
 ========================================================= */
+.hero_section_box {
+  border: var(--test_border);
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_intro_box {
+  border: var(--test_border);
+
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero_intro_box .content_box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.hero_intro_box .social_links_box {
+  display: flex;
+  gap: 1.5rem;
+}
+.hero_intro_box .button_box {
+}
+
+.hero_image_box {
+  border: var(--test_border);
+
+  width: 30;
+}
+.hero_image_box img {
+  width: 72%;
+  display: block;
+  margin: auto;
+}
 /* =========================================================
-              New Section Ends  
+              Hero Section Ends  
   ========================================================= */
 
 /* =========================================================
