@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =========================================================
+            Root Variables Starts  
+========================================================= */
+
+:root {
+  --navbar_background: #e0fab5;
+  --navbar_color_dark: #002633;
+  --navbar_color_light: #00698b;
+  --navbar_height: 7rem;
+
+  --background_color_dark: #ffa69f;
+  --background_color_light: #facfcc;
+
+  --heading_color_dark: #08081f;
+  --heading_color_light: #15153d;
+  --para_color_dark: #1f0505;
+  --para_color_light: #311919;
+
+  --test_border: 2px solid red;
+}
+
+/* =========================================================
+            Root Variables Ends  
+========================================================= */
+
+/* =========================================================
+            Reset Defaults Starts  
+========================================================= */
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+p {
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+/* =========================================================
+              Reset Defaults Ends  
+  ========================================================= */
+
+/* =========================================================
+            Reuseable Classes Starts  
+========================================================= */
+.logo_link {
+  font-family: "Sofia", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.logo_link:hover {
+  font-weight: 600;
+}
+
+/* =========================================================
+              Reuseable Classes Ends  
+  ========================================================= */
+
+/* =========================================================
+            Navbar Section Starts  
+========================================================= */
+.navbar_box {
+  border: var(--test_border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--navbar_background);
+}
+
+.navbar_logo_box {
+  border: var(--test_border);
+}
+.navbar_logo_box a {
+  font-size: 3rem;
+}
+
+.navbar_menu_box {
+  border: var(--test_border);
+
+  display: flex;
+  gap: 2.1rem;
+}
+
+.navbar_menu_links {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--navbar_color_dark);
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+.navbar_menu_links:hover {
+  color: var(--navbar_color_light);
+}
+/* =========================================================
+              Navbar Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            New Section Starts  
+========================================================= */
+
+/* =========================================================
+              New Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            New Section Starts  
+========================================================= */
+
+/* =========================================================
+              New Section Ends  
+  ========================================================= */
+
+/* =========================================================
+            New Section Starts  
+========================================================= */
+
+/* =========================================================
+              New Section Ends  
+  ========================================================= */
