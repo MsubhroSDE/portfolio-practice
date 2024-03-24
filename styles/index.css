@@ -197,7 +197,6 @@ h1 {
   border: var(--test_border);
 
   background: var(--background_color_dark);
-  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -207,11 +206,12 @@ h1 {
 .app_section_container {
   border: var(--test_border);
 
-  min-height: calc(100vh - var(--navbar_height) - 3rem);
+  min-height: calc(100vh - var(--navbar_height));
   background: var(--background_color_light);
   border-radius: 1.2rem;
   box-shadow: 0 0 1rem var(--background_color_light);
   padding: 1rem 2rem;
+  margin: 0 2rem;
 }
 
 .section_heading {
@@ -369,13 +369,57 @@ h1 {
 /* =========================================================
             New Section Starts  
 ========================================================= */
+.services_section_box {
+  border: var(--test_border);
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.services_card_box {
+  border: var(--test_border);
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.service_card {
+  border: var(--test_border);
+
+  width: 30%;
+  height: 21rem;
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.service_card img {
+  width: 6rem;
+}
+.service_card p {
+  text-align: center;
+}
 /* =========================================================
-              New Section Ends  
+              Freelance Section Ends  
   ========================================================= */
+.freelance_section_box {
+  border: var(--test_border);
 
+  font-size: 3rem;
+  padding: 5rem;
+  text-align: center;
+}
 /* =========================================================
-            New Section Starts  
+            Freelance Section Starts  
 ========================================================= */
 
 /* =========================================================
