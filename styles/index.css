@@ -328,11 +328,42 @@ h1 {
   ========================================================= */
 
 /* =========================================================
-            New Section Starts  
+            My Projects Section Starts  
 ========================================================= */
+.project_section_box {
+  border: var(--test_border);
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.projects_card_box {
+  border: var(--test_border);
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.1rem;
+}
+
+.project_card {
+  border: var(--test_border);
+
+  width: 30%;
+  height: 45rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 /* =========================================================
-              New Section Ends  
+              My Projects Section Ends  
   ========================================================= */
 
 /* =========================================================
