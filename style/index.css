@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,3 +9,115 @@
 html {
   font-size: 62.5%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+/* =============================================
+            Root Variables Starts
+============================================= */
+
+:root {
+  /* --test-border: 2px solid red; */
+
+  --logo_dark_color: hsl(30, 90%, 45%);
+  --logo_light_color: hsl(60, 90%, 45%);
+
+  --navbar_background_color: hsl(210, 100%, 81%);
+  --navbar_dark_color: hsl(0, 60%, 15%);
+  --navbar_light_color: hsl(30, 60%, 45%);
+  --navbar_height: 7.2rem;
+}
+
+/* =============================================
+            Root Variables Ends
+============================================= */
+
+/* =============================================
+            Reuseable Classes Starts
+============================================= */
+
+.logo_link:link,
+.logo_link:visited {
+  border: 0.3rem solid var(--logo_dark_color);
+
+  padding: 0.3rem 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: var(--logo_dark_color);
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+}
+.logo_link:hover,
+.logo_link:active {
+  color: var(--logo_light_color);
+  background-color: var(--logo_dark_color);
+}
+
+/* =============================================
+            Reuseable Classes Ends
+============================================= */
+
+/* =============================================
+            Header Section Starts
+============================================= */
+.header_box {
+  border: var(--test-border);
+
+  height: var(--navbar_height);
+  padding: 1.5rem 4.5rem;
+  background-color: var(--navbar_background_color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo_box {
+  border: var(--test-border);
+}
+
+.nav_menu_box {
+  border: var(--test-border);
+
+  display: flex;
+  gap: 2.7rem;
+}
+
+.nav_menu_link:link,
+.nav_menu_link:visited {
+  border: var(--test-border);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navbar_dark_color);
+  text-transform: uppercase;
+  transition: all 0.3s linear;
+}
+
+.nav_menu_link:hover,
+.nav_menu_link:active {
+  color: var(--navbar_light_color);
+}
+/* =============================================
+            Header Section Ends
+============================================= */
+
+/* =============================================
+            Footer Section Starts
+============================================= */
+
+/* =============================================
+            Footer Section Ends
+============================================= */
