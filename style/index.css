@@ -69,6 +69,10 @@ a {
   --para_dark_color: hsl(255, 60%, 30%);
   --para_light_color: hsl(255, 30%, 30%);
 
+  --gap_l: 3rem;
+  --gap_m: 2.1rem;
+  --gap_s: 1.2rem;
+
   --navbar_background_color: hsl(210, 100%, 72%);
   --navbar_dark_color: hsl(0, 60%, 15%);
   --navbar_light_color: hsl(30, 60%, 45%);
@@ -97,6 +101,22 @@ a {
   background-color: var(--logo_dark_color);
 }
 
+.main_box {
+  border: var(--test-border);
+
+  background-color: var(--background_dark_color);
+  display: flex;
+  flex-direction: column;
+}
+
+.section_box {
+  border: var(--test-border);
+
+  background-color: var(--background_light_color);
+  min-height: calc(100vh - var(--navbar_height));
+  padding: 1.2rem 4.5rem;
+}
+
 /* ================== Reuseable Classes Ends ================== */
 
 /* ================== Header Section Starts ================== */
@@ -111,6 +131,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 69;
 }
 
 .header_logo_box {
@@ -121,7 +145,7 @@ a {
   border: var(--test-border);
 
   display: flex;
-  gap: 3rem;
+  gap: var(--gap_l);
 }
 
 .nav_link:link,
@@ -145,6 +169,63 @@ a {
 
 /* ================== Hero Section Starts ================== */
 
+.hero_section_box {
+  border: var(--test-border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero_welcome_box {
+  border: var(--test-border);
+
+  width: 54%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_l);
+}
+
+.hero_intro_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_l);
+}
+
+.hero_intro_box h1 {
+  color: var(--logo_dark_color);
+  font-size: 6.9rem;
+}
+
+.hero_social_links_box {
+  border: var(--test-border);
+
+  display: flex;
+  gap: var(--gap_l);
+}
+
+.hero_buttons_box {
+  border: var(--test-border);
+
+  display: flex;
+  gap: var(--gap_l);
+}
+
+.hero_dp_box {
+  border: var(--test-border);
+
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_dp_box img {
+  width: 69%;
+}
+
 /* ================== Hero Section Ends ================== */
 
 /* ================== About Me Starts ================== */
@@ -156,5 +237,12 @@ a {
 /* ================== Projects Section Ends ================== */
 
 /* ================== Footer Section Starts ================== */
+
+.footer_box {
+  border: var(--test-border);
+
+  padding: 2.1rem 4.5rem;
+  background-color: darkgray;
+}
 
 /* ================== Footer Section Ends ================== */
