@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
 
+/* =============================================
+            CSS Reset Starts
+============================================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -26,6 +30,10 @@ a {
 }
 
 /* =============================================
+            CSS Reset Ends
+============================================= */
+
+/* =============================================
             Root Variables Starts
 ============================================= */
 
@@ -41,11 +49,20 @@ a {
   --primary_color: hsl(201, 100%, 60%);
   --secondary_color: hsl(150, 100%, 60%);
 
+  --primary_shadow_color: hsl(201, 100%, 81%);
+  --secondary_shadow_color: hsl(149, 100%, 81%);
+
   --primary_gradient: linear-gradient(
     to right,
     var(--primary_color),
     var(--secondary_color)
   );
+
+  --font_size_xl: 3rem;
+  --font_size_l: 2.1rem;
+  --font_size_m: 1.5rem;
+  --font_size_s: 1.2rem;
+  --font_size_xs: 0.9rem;
 
   --heading_dark_color: hsl(0, 100%, 15%);
   --heading_light_color: hsl(30, 60%, 15%);
@@ -73,7 +90,7 @@ a {
 
   padding: 0.3rem 0.9rem;
   font-family: "Poppins", sans-serif;
-  font-size: 2.7rem;
+  font-size: var(--font_size_xl);
   font-weight: 900;
   color: var(--logo_dark_color);
   text-transform: capitalize;
@@ -104,22 +121,63 @@ a {
   background-color: var(--background_light_color);
 }
 
+.section_heading_box {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.section_heading_box h2 {
+  font-size: var(--font_size_xl);
+  font-weight: 700;
+  color: var(--heading_dark_color);
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+.section_heading_box h2::before {
+  content: "";
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--primary_gradient);
+  border-radius: 50%;
+}
+.section_heading_box h2::after {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 1.2rem;
+  width: 21rem;
+  height: 0.3rem;
+  background: var(--secondary_color);
+}
+
+.section_heading_box p {
+  font-size: var(--font_size_m);
+  font-weight: 700;
+  color: var(--para_dark_color);
+}
+
 .primary_button {
   border: none;
   outline: none;
   background: var(--primary_gradient);
   padding: 1.2rem 3.6rem;
-  font-size: 1.5rem;
+  font-size: var(--font_size_m);
   font-weight: 500;
   text-transform: capitalize;
   border-radius: 0.3rem;
   transition: all 0.3s linear;
 }
 .primary_button:hover {
-  box-shadow: 0 1.5rem 1.5rem gray;
+  box-shadow: 0 1.5rem 1.5rem var(--primary_shadow_color);
 }
 .primary_button:active {
-  box-shadow: 0 1.5rem 1.5rem springgreen;
+  box-shadow: 0 1.5rem 1.5rem var(--secondary_shadow_color);
 }
 /* =============================================
             Reuseable Classes Ends
@@ -138,6 +196,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  position: sticky;
+  top: 0;
 }
 
 .logo_box {
@@ -156,7 +217,7 @@ a {
   border: var(--test-border);
 
   font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
+  font-size: var(--font_size_m);
   font-weight: 700;
   color: var(--navbar_dark_color);
   text-transform: uppercase;
@@ -197,12 +258,12 @@ a {
   color: var(--logo_dark_color);
 }
 .hero_intro_box h3 {
-  font-size: 3rem;
+  font-size: var(--font_size_xl);
   font-weight: 600;
   color: var(--heading_dark_color);
 }
 .hero_intro_box p {
-  font-size: 1.5rem;
+  font-size: var(--font_size_m);
   font-weight: 300;
   color: var(--para_dark_color);
 }
@@ -213,7 +274,7 @@ a {
   gap: 2.1rem;
 }
 .hero_social_icon_box a {
-  font-size: 2.1rem;
+  font-size: var(--font_size_l);
 }
 
 .hero_button_box {
