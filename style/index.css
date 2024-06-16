@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  line-height: 1.6;
   overflow-x: hidden;
 }
 
@@ -28,7 +29,6 @@ h6 {
 a {
   text-decoration: none;
 }
-
 /* =============================================
             CSS Reset Ends
 ============================================= */
@@ -49,8 +49,8 @@ a {
   --primary_color: hsl(201, 100%, 60%);
   --secondary_color: hsl(150, 100%, 60%);
 
-  --primary_shadow_color: hsl(201, 100%, 81%);
-  --secondary_shadow_color: hsl(149, 100%, 81%);
+  --primary_shadow_color: hsl(60, 100%, 81%);
+  --secondary_shadow_color: hsl(30, 100%, 81%);
 
   --primary_gradient: linear-gradient(
     to right,
@@ -179,6 +179,39 @@ a {
 .primary_button:active {
   box-shadow: 0 1.5rem 1.5rem var(--secondary_shadow_color);
 }
+
+.heading_l {
+  font-size: var(--font_size_l);
+  font-weight: 600;
+  color: var(--heading_dark_color);
+}
+.heading_m {
+  font-size: var(--font_size_m);
+  font-weight: 500;
+  color: var(--heading_light_color);
+}
+.heading_s {
+  font-size: var(--font_size_s);
+  font-weight: 300;
+  color: var(--heading_dark_color);
+}
+
+.para_l {
+  font-size: var(--font_size_m);
+  font-weight: 500;
+  color: var(--para_dark_color);
+}
+.para_m {
+  font-size: var(--font_size_s);
+  font-weight: 400;
+  color: var(--para_light_color);
+}
+.para_s {
+  font-size: var(--font_size_xs);
+  font-weight: 300;
+  color: var(--para_dark_color);
+}
+
 /* =============================================
             Reuseable Classes Ends
 ============================================= */
@@ -302,7 +335,114 @@ a {
 /* =============================================
             About Me Section Starts
 ============================================= */
+.about_section {
+  border: var(--test-border);
 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.about_background_box {
+  border: var(--test-border);
+
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.background_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro_box {
+  border: var(--test-border);
+}
+.experience_box,
+.education_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about_skills_box {
+  border: var(--test-border);
+
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.technical_skills_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.skill_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.skills_rating {
+  width: 90%;
+  height: 1.2rem;
+  border-radius: 9rem;
+  background-color: var(--secondary_shadow_color);
+  box-shadow: 0 0 0.6rem var(--primary_shadow_color);
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.skills_rating span {
+  z-index: 3;
+}
+.skills_rating::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary_gradient);
+  border-radius: 9rem;
+}
+.skill_1::before {
+  width: 90%;
+}
+.skill_2::before {
+  width: 75%;
+}
+.skill_3::before {
+  width: 65%;
+}
+.skill_4::before {
+  width: 85%;
+}
+.skill_5::before {
+  width: 75%;
+}
+.skill_6::before {
+  width: 60%;
+}
+
+.download_cv_box {
+  border: var(--test-border);
+
+  padding: 1.2rem 0;
+}
 /* =============================================
             About Me Section Ends
 ============================================= */
