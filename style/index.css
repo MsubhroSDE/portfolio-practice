@@ -37,7 +37,7 @@ a {
 /* ================== Root Variables Starts ================== */
 
 :root {
-  --test-border: 1px solid red;
+  /* --test-border: 1px solid red; */
 
   --primary_color: hsl(210, 100%, 60%);
   --secondary_color: hsl(150, 100%, 60%);
@@ -624,7 +624,196 @@ a {
 
 /* ================== Services Section Ends ================== */
 
+/* ================== Testimonials Section Starts ================== */
+
+.testimonials_section_box {
+  border: var(--test-border);
+
+  min-height: auto;
+  margin-top: var(--navbar_height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.testimonial_swiper_box {
+  border: var(--test-border);
+
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: var(--font_size_l);
+  background: var(--primary_shadow_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination {
+  border: var(--test-border);
+}
+
+.testimonial_card {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_l);
+  padding: 1.2rem 2.1rem;
+}
+.testimonial_card p {
+  text-align: center;
+}
+
+.testimonial_author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_s);
+}
+
+.testimonial_author img {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  border: 0.3rem solid var(--secondary_color);
+  border-radius: 50%;
+}
+
+/* ================== Testimonials Section Ends ================== */
+
+/* ================== Freelance Banner Section Starts ================== */
+
+.freelance_banner_section_box {
+  border: var(--test-border);
+
+  min-height: auto;
+
+  background: url("../images/freelance.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+.freelance_banner_section_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary_color);
+  opacity: 0.9;
+}
+.freelance_banner_content {
+  position: relative;
+  padding: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_m);
+}
+.freelance_banner_section_box h2 {
+  font-size: var(--font_size_xl);
+  color: white;
+}
+
+.freelance_banner_section_box h2 span {
+  color: springgreen;
+}
+
+.freelance_banner_section_box p {
+  font-size: var(--font_size_m);
+  color: white;
+  text-align: center;
+}
+
+/* ================== Freelance Banner Section Ends ================== */
+
 /* ================== Contact Me Section Starts ================== */
+
+.contacts_section_box {
+  border: var(--test-border);
+
+  margin-top: var(--navbar_height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.contact_info_box {
+  border: var(--test-border);
+
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+
+.contact_info_card {
+  display: flex;
+  gap: var(--gap_s);
+}
+.contact_icon {
+  font-size: var(--font_size_l);
+}
+.contact_address_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+  width: 100%;
+}
+
+.contact_address_box iframe {
+  width: 100%;
+  height: 30rem;
+  border: 0.21rem solid var(--primary_shadow_color);
+  border-radius: 0.9rem;
+}
+
+.contact_form_box {
+  border: var(--test-border);
+
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+
+.contact_form_box input,
+textarea {
+  width: 100%;
+  padding: 1.2rem 2.1rem;
+  outline: none;
+  border: 0.15rem solid var(--primary_shadow_color);
+  background: transparent;
+  color: var(--para_light_color);
+  font-size: var(--font_size_m);
+  border-radius: 0.9rem;
+}
+
+.contact_form_box input:focus,
+textarea:focus {
+  border: 0.15rem solid springgreen;
+}
 
 /* ================== Contact Me Section Ends ================== */
 
