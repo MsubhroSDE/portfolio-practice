@@ -37,7 +37,7 @@ a {
 /* ================== Root Variables Starts ================== */
 
 :root {
-  /* --test-border: 1px solid red; */
+  --test-border: 1px solid red;
 
   --primary_color: hsl(210, 100%, 60%);
   --secondary_color: hsl(150, 100%, 60%);
