@@ -77,6 +77,11 @@ a {
   --navbar_dark_color: hsl(0, 60%, 15%);
   --navbar_light_color: hsl(30, 60%, 45%);
   --navbar_height: 7.2rem;
+
+  --footer_background_color: hsl(210, 15%, 30%);
+  --footer_heading_color: hsl(69, 100%, 60%);
+  --footer_dark_color: hsl(0, 100%, 87%);
+  --footer_light_color: hsl(0, 100%, 99%);
 }
 
 /* ================== Root Variables Ends ================== */
@@ -823,7 +828,103 @@ textarea:focus {
   border: var(--test-border);
 
   padding: 2.1rem 4.5rem;
-  background-color: darkgray;
+  background-color: var(--footer_background_color);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.footer_box h3 {
+  color: var(--footer_heading_color);
+}
+
+.footer_links {
+  font-size: var(--font_size_s);
+  color: var(--footer_dark_color);
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  gap: var(--gap_s);
+}
+.footer_links:hover,
+.footer_links:active {
+  color: var(--footer_light_color);
+}
+
+.footer_box address {
+  font-size: var(--font_size_s);
+  color: var(--footer_dark_color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap_s);
+}
+
+.footer_about_box {
+  border: var(--test-border);
+
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+
+.footer_about_box h3 {
+  color: var(--logo_dark_color);
+}
+.footer_about_box p {
+  color: var(--background_light_color);
+}
+
+.footer_quick_links_box,
+.footer_services_link_box,
+.footer_contact_box {
+  border: var(--test-border);
+
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+
+.footer_social_links_box {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_social_links_box a {
+  font-size: var(--font_size_l);
+}
+
+.footer_credits_box {
+  border: var(--test-border);
+
+  width: 100%;
+}
+.footer_credits_box h4 {
+  font-size: var(--font_size_s);
+  color: var(--footer_light_color);
+  text-align: center;
+}
+
+.footer_credits_box a {
+  font-size: var(--font_size_s);
+  color: var(--logo_dark_color);
+  transition: all 0.3s linear;
+}
+.footer_credits_box a {
+  color: var(--logo_light_color);
+}
+.footer_credits_box span {
+  font-size: var(--font_size_l);
+  color: red;
+}
+
+.footer_credits_box p {
+  font-size: var(--font_size_xs);
+  color: var(--background_light_color);
+  text-align: center;
 }
 
 /* ================== Footer Section Ends ================== */
