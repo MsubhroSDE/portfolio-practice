@@ -324,14 +324,63 @@ a {
 .hero_dp_box {
   border: var(--test-border);
 
-  width: 42%;
+  width: 30%;
+  height: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: url("../images/subhro.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  position: relative;
+  overflow: hidden;
+  border-radius: 58% 42% 30% 70% / 48% 68% 32% 52%;
+  transition: all 0.3s linear;
+  animation: hero-wave-animation 3s linear infinite;
 }
 
 .hero_dp_box img {
   width: 69%;
+}
+
+.hero_dp_box::after {
+  content: "";
+  width: 96%;
+  height: 96%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 0.9rem solid var(--primary_color);
+  border-radius: 58% 42% 30% 70% / 48% 68% 32% 52%;
+  animation: hero-wave-animation 3s linear infinite;
+}
+.hero_dp_box::before {
+  content: "";
+  width: 96%;
+  height: 96%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 12rem solid var(--secondary_color);
+  border-radius: 58% 42% 30% 70% / 48% 68% 32% 52%;
+  animation: hero-wave-animation 3s linear infinite;
+}
+@keyframes hero-wave-animation {
+  0% {
+    border-radius: 58% 42% 30% 70% / 48% 68% 32% 52%;
+  }
+  50% {
+    border-radius: 36% 64% 47% 53% / 62% 46% 54% 38%;
+  }
+  100% {
+    border-radius: 58% 42% 30% 70% / 48% 68% 32% 52%;
+  }
 }
 
 /* ================== Hero Section Ends ================== */
