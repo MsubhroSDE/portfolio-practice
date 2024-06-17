@@ -310,6 +310,10 @@ a {
   gap: var(--gap_l);
 }
 
+.hero_social_links_box a {
+  font-size: var(--font_size_xl);
+}
+
 .hero_buttons_box {
   border: var(--test-border);
 
@@ -913,9 +917,13 @@ textarea:focus {
   color: var(--logo_dark_color);
   transition: all 0.3s linear;
 }
-.footer_credits_box a {
-  color: var(--logo_light_color);
+
+.footer_credits_box a:hover,
+.footer_credits_box a:active {
+  text-decoration: underline;
+  text-decoration-color: var(--logo_light_color);
 }
+
 .footer_credits_box span {
   font-size: var(--font_size_l);
   color: red;
