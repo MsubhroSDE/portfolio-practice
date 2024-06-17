@@ -507,6 +507,7 @@ a {
 
   width: 30%;
   border-radius: 1.2rem;
+  box-shadow: 0 0 0.6rem var(--primary_shadow_color);
   overflow: hidden;
   position: relative;
 }
@@ -543,6 +544,50 @@ a {
 /* ================== My Blogs Section Ends ================== */
 
 /* ================== Services Section Starts ================== */
+
+.services_section_box {
+  border: var(--test-border);
+
+  margin-top: var(--navbar_height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.service_list_box {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_m);
+}
+
+.service_card {
+  border: var(--test-border);
+
+  width: 30%;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.6rem var(--primary_shadow_color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_s);
+}
+.service_card p {
+  text-align: center;
+}
+
+.service_icon {
+  font-size: 4.5rem;
+}
 
 /* ================== Services Section Ends ================== */
 
