@@ -103,6 +103,7 @@ a {
 
 .primary_button {
   display: inline-block;
+  cursor: pointer;
   border: none;
   outline: none;
   width: 15rem;
@@ -424,7 +425,130 @@ a {
 
 /* ================== Projects Section Starts ================== */
 
+.projects_section_box {
+  border: var(--test-border);
+
+  margin-top: var(--navbar_height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.projects_list_box {
+  border: var(--test-border);
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.project_card {
+  border: var(--test-border);
+
+  width: 30%;
+  padding: 1.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.9rem var(--primary_shadow_color);
+}
+
 /* ================== Projects Section Ends ================== */
+
+/* ================== My Blogs Section Starts ================== */
+
+.blogs_section_box {
+  border: var(--test-border);
+
+  margin-top: var(--navbar_height);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_l);
+}
+
+.blogs_filter_box {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_m);
+  transition: all 0.6s linear;
+}
+.blogs_filter_box button:hover {
+  transform: translateY(-1.2rem);
+}
+.blogs_filter_button_active {
+  transform: translateY(-1.2rem);
+}
+
+.blogs_list_box {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--gap_m);
+}
+
+.blog_card {
+  border: var(--test-border);
+
+  width: 30%;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  position: relative;
+}
+.blog_card img {
+  width: 100%;
+  height: 9rem;
+}
+.blog_card h3 {
+  padding: 0.9rem 1.2rem;
+}
+
+.blog_overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary_gradient);
+  border-radius: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(100%);
+  opacity: 0.9;
+  transition: all 0.3s linear;
+}
+.blog_card:hover .blog_overlay {
+  transform: translateY(0);
+}
+
+/* ================== My Blogs Section Ends ================== */
+
+/* ================== Services Section Starts ================== */
+
+/* ================== Services Section Ends ================== */
+
+/* ================== Contact Me Section Starts ================== */
+
+/* ================== Contact Me Section Ends ================== */
 
 /* ================== Footer Section Starts ================== */
 
