@@ -571,7 +571,7 @@ a {
   border: var(--test-border);
 
   width: 30%;
-  padding: 1.5rem;
+  padding: 1.2rem 2.1rem;
   border-radius: 1.2rem;
   box-shadow: 0 0 0.6rem var(--primary_shadow_color);
 
@@ -586,7 +586,40 @@ a {
 }
 
 .service_icon {
-  font-size: 4.5rem;
+  display: inline-block;
+  position: relative;
+  height: 3.6rem;
+  width: 3.6rem;
+  padding: 1.2rem;
+  color: var(--heading_dark_color);
+  background-color: var(--secondary_shadow_color);
+  border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  transition: all 0.3s linear;
+  animation: wave-animation 3s linear infinite;
+}
+.service_icon::after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 0.12rem solid var(--heading_light_color);
+  border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  animation: wave-animation 3s linear infinite;
+}
+@keyframes wave-animation {
+  0% {
+    border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  }
+  50% {
+    border-radius: 45% 51% 36% 69% / 48% 63% 36% 42%;
+  }
+  100% {
+    border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  }
 }
 
 /* ================== Services Section Ends ================== */
