@@ -663,6 +663,51 @@ a {
 
 /* ================== Testimonials Section Ends ================== */
 
+/* ================== Freelance Banner Ends ================== */
+
+.freelance_banner_section_box {
+  border: var(--test-border);
+
+  background: url("../images/freelance.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+.freelance_banner_section_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--primary_color);
+  opacity: 0.9;
+}
+.freelance_banner_content {
+  position: relative;
+  padding: 4.5rem;
+}
+.freelance_banner_section_box h2 {
+  font-size: var(--font_size_xl);
+  color: white;
+}
+
+.freelance_banner_section_box h2 span {
+  color: springgreen;
+}
+
+.freelance_banner_section_box p {
+  font-size: var(--font_size_m);
+  color: white;
+}
+
+/* ================== Freelance Banner Ends ================== */
+
+/* ================== Contact Me Section Ends ================== */
+
+/* ================== Contact Me Section Ends ================== */
+
 /* ================== Footer Section Ends ================== */
 
 /* ================== Footer Section Ends ================== */
