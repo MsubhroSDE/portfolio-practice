@@ -96,6 +96,9 @@ a {
 
 /* ================== Reuseable Classes Starts ================== */
 
+.bt {
+  border: var(--test-border);
+}
 .box {
   display: flex;
   justify-content: space-between;
@@ -706,8 +709,130 @@ a {
 
 /* ================== Contact Me Section Ends ================== */
 
+.contact_section_box {
+  min-height: var(--page_height);
+  margin-top: var(--navbar_height);
+}
+
+.contact_info_box,
+.contact_form_box {
+  border: var(--test-border);
+
+  width: 48%;
+}
+
+.contact_info_card {
+  border: var(--test-border);
+
+  width: 100%;
+  display: flex;
+  gap: var(--gap_s);
+}
+.contact_icon {
+  font-size: var(--font_size_l);
+}
+
+.contact_info_box iframe {
+  width: 100%;
+  height: 27rem;
+  border: 0.21rem solid var(--shadow_dark_color);
+  border-radius: var(--primary_border_radius);
+}
+
+.contact_form_box input,
+textarea {
+  width: 100%;
+  padding: 1.2rem 2.1rem;
+  outline: none;
+  border: 0.21rem solid var(--shadow_dark_color);
+  background: var(--background_dark_color);
+  color: var(--para_light_color);
+  font-size: var(--font_size_s);
+  border-radius: 0.9rem;
+}
+
+.contact_form_box input:focus,
+textarea:focus {
+  border: 0.21rem solid springgreen;
+}
 /* ================== Contact Me Section Ends ================== */
 
 /* ================== Footer Section Ends ================== */
+
+.footer_box {
+  padding: 2.1rem 4.5rem;
+  background-color: var(--footer_background_color);
+}
+
+.footer_box h3 {
+  color: var(--footer_heading_color);
+  margin-bottom: 0.6rem;
+}
+
+.footer_about_box,
+.footer_quick_links_box,
+.footer_services_link_box,
+.footer_contact_box {
+  border: var(--test-border);
+
+  width: 21%;
+}
+
+.footer_about_box h2 {
+  color: var(--logo_dark_color);
+}
+.footer_about_box p {
+  color: var(--background_light_color);
+}
+
+.footer_links,
+.footer_box address {
+  font-size: var(--font_size_s);
+  color: var(--footer_dark_color);
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  gap: var(--gap_s);
+}
+.footer_links:hover,
+.footer_links:active {
+  color: var(--footer_light_color);
+}
+
+.footer_social_links_box a {
+  font-size: var(--font_size_l);
+}
+
+.footer_credits_box {
+  border: var(--test-border);
+
+  width: 100%;
+}
+.footer_credits_box h4 {
+  font-size: var(--font_size_s);
+  color: var(--footer_light_color);
+}
+
+.footer_credits_box a {
+  font-size: var(--font_size_s);
+  color: var(--logo_dark_color);
+  transition: all 0.3s linear;
+}
+
+.footer_credits_box a:hover,
+.footer_credits_box a:active {
+  text-decoration: underline;
+  text-decoration-color: var(--logo_light_color);
+}
+
+.footer_credits_box span {
+  font-size: var(--font_size_l);
+  color: red;
+}
+
+.footer_credits_box p {
+  font-size: var(--font_size_xs);
+  color: var(--background_light_color);
+}
 
 /* ================== Footer Section Ends ================== */

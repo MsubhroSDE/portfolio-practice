@@ -318,7 +318,7 @@ My Blogs Section Starts
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="box box_col box_m w_100">
+        <div class="box box_col box_m width_100">
           <div class="blogs_filter_box box box_center box_l">
             <button class="primary_button">All</button>
             <button class="primary_button">Technology</button>
@@ -652,7 +652,7 @@ Contact Me Section Starts
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="contact_info_box">
+        <div class="contact_info_box box box_col box_s">
           <div class="contact_info_card">
             <ion-icon name="call-outline" class="contact_icon"> </ion-icon>
             <p class="p_m">+91-8777548726</p>
@@ -665,7 +665,7 @@ Contact Me Section Starts
 
           <div class="contact_info_card">
             <ion-icon name="location-outline" class="contact_icon"> </ion-icon>
-            <div class="contact_address_box">
+            <div class="box box_col box_s width_100">
               <p class="p_m">Kolkata, West Bengal, India</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689608591!2d88.26494985854566!3d22.53556493799616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1718635740022!5m2!1sen!2sin"
@@ -678,41 +678,48 @@ Contact Me Section Starts
         </div>
 
         <form
+          class="contact_form_box box box_col box_m"
           action="https://formspree.io/f/mpzvvnbp"
           method="POST"
-          class="contact_form_box"
         >
-          <div class="input_card">
+          <div class="width_100">
             <label for="Name"></label>
             <input
               type="text"
               name="Name"
               id="Name"
               placeholder="Enter Your Name . . ."
+              required
+              minlength="3"
+              maxlength="45"
             />
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <label for="Email"></label>
             <input
               type="email"
               name="Email"
               id="Email"
               placeholder="Enter Your Email Id . . ."
+              required
             />
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <label for="Subject"></label>
             <input
               type="text"
               name="Subject"
               id="Subject"
               placeholder="Enter Message Subject . . ."
+              required
+              minlength="9"
+              maxlength="90"
             />
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <label for="Message"></label>
             <textarea
               name="Message"
@@ -720,10 +727,13 @@ Contact Me Section Starts
               placeholder="Enter Your Message . . ."
               cols="30"
               rows="6"
+              required
+              minlength="12"
+              maxlength="450"
             ></textarea>
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <button type="submit" class="primary_button">Send Message</button>
           </div>
         </form>
@@ -742,7 +752,129 @@ Main App Ends
 Footer Section Starts
 ============================================= -->
 
-    <footer class="footer_box box box_wrap section_box">footer</footer>
+    <footer class="footer_box box box_wrap section_box">
+      <div class="footer_about_box box box_col box_s">
+        <h2 class="h_l">Subhro Mukherjee</h2>
+
+        <p class="p_m">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
+          deleniti nemo voluptate!
+        </p>
+      </div>
+
+      <div class="footer_quick_links_box box box_col box_s">
+        <h3 class="h_m">Quick Links</h3>
+
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          about me</a
+        >
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          projects</a
+        >
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          portfolio</a
+        >
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          my blogs</a
+        >
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          services</a
+        >
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          contact me</a
+        >
+      </div>
+
+      <div class="footer_services_link_box box box_col box_s">
+        <h3 class="h_m">Services Links</h3>
+
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          Web Design & Development
+        </a>
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          Mobile App Development
+        </a>
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          Search Engine Optimization
+        </a>
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          Support & Maintenance
+        </a>
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          Brand development
+        </a>
+        <a href="#" class="footer_links">
+          <ion-icon name="caret-forward-outline"></ion-icon>
+          Training & Internship
+        </a>
+      </div>
+
+      <div class="footer_contact_box box box_col box_m">
+        <div class="box box_col box_s width_100">
+          <h3 class="h_m">Have a Question ?</h3>
+
+          <address>
+            <ion-icon name="location-outline"></ion-icon>
+            Kolkata, India
+          </address>
+          <a href="tel:+918777548726" class="footer_links">
+            <ion-icon name="call-outline"></ion-icon>
+            +91-8777548726
+          </a>
+          <a href="mailto:msubhro.mukherjee@gmail.com" class="footer_links">
+            <ion-icon name="mail-outline"></ion-icon>
+            msubhro.mukherjee@gmail.com
+          </a>
+        </div>
+
+        <div class="box box_col box_s width_100">
+          <h3 class="h_m">Follow Me</h3>
+
+          <div class="footer_social_links_box box box_m width_100">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_credits_box box_center box_col box_xs">
+        <h4>
+          This wesite is made with
+          <span>&hearts;</span>
+          by
+          <a href="#" target="_blank">Subhro Mukherjee</a>
+        </h4>
+        <p>All Rights Reserved &copy; 2024</p>
+      </div>
+    </footer>
 
     <!-- =============================================
 Footer Section Ends
