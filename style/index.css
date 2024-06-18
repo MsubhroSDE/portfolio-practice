@@ -502,6 +502,130 @@ a {
 
 /* ================== My Projects Section Ends ================== */
 
+/* ================== My Blogs Section Ends ================== */
+.blogs_section_box {
+  min-height: var(--page_height);
+  margin-top: var(--navbar_height);
+}
+
+.blogs_filter_box {
+  border: var(--test-border);
+
+  width: 100%;
+}
+
+.blogs_filter_box button:hover {
+  transform: translateY(-1.2rem);
+}
+.blogs_filter_button_active {
+  transform: translateY(-1.2rem);
+}
+
+.blogs_list_box {
+  border: var(--test-border);
+
+  width: 100%;
+}
+
+.blog_card {
+  border: var(--test-border);
+
+  width: 30%;
+  border-radius: var(--secondary_border_radius);
+  box-shadow: 0 0 0.6rem var(--shadow_dark_color);
+  overflow: hidden;
+  position: relative;
+}
+.blog_card img {
+  width: 100%;
+  height: 9rem;
+}
+.blog_card h3 {
+  padding: 0.9rem 1.2rem;
+}
+
+.blog_overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary_gradient);
+  border-radius: var(--secondary_border_radius);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(100%);
+  opacity: 0.9;
+  transition: all 0.3s linear;
+}
+.blog_card:hover .blog_overlay {
+  transform: translateY(0);
+}
+/* ================== My Blogs Section Ends ================== */
+
+/* ================== My Services Section Ends ================== */
+
+.services_section_box {
+  min-height: var(--page_height);
+  margin-top: var(--navbar_height);
+}
+
+.service_card {
+  border: var(--test-border);
+
+  width: 30%;
+  padding: 1.2rem 2.1rem;
+  border-radius: var(--secondary_border_radius);
+  box-shadow: 0 0 0.6rem var(--shadow_dark_color);
+  align-items: center;
+}
+
+.service_icon {
+  display: inline-block;
+  position: relative;
+  height: 3.6rem;
+  width: 3.6rem;
+  padding: 1.2rem;
+  color: var(--heading_dark_color);
+  background-color: var(--shadow_light_color);
+  border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  transition: all 0.3s linear;
+  animation: wave-animation 3s linear infinite;
+}
+.service_icon::after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 0.12rem solid var(--heading_light_color);
+  border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  animation: service-wave-animation 3s linear infinite;
+}
+@keyframes service-wave-animation {
+  0% {
+    border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  }
+  50% {
+    border-radius: 45% 51% 36% 69% / 48% 63% 36% 42%;
+  }
+  100% {
+    border-radius: 36% 60% 69% 33% / 30% 45% 51% 63%;
+  }
+}
+/* ================== My Services Section Ends ================== */
+
+/* ================== Footer Section Ends ================== */
+
+/* ================== Footer Section Ends ================== */
+
 /* ================== Footer Section Ends ================== */
 
 /* ================== Footer Section Ends ================== */
