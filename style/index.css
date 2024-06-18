@@ -622,9 +622,46 @@ a {
 }
 /* ================== My Services Section Ends ================== */
 
-/* ================== Footer Section Ends ================== */
+/* ================== Testimonials Section Ends ================== */
 
-/* ================== Footer Section Ends ================== */
+.testimonials_section_box {
+  margin-top: var(--navbar_height);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: var(--font_size_l);
+  background: var(--primary_shadow_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination {
+  border: var(--test-border);
+}
+
+.testimonial_card {
+  border: var(--test-border);
+
+  padding: 1.2rem 2.1rem;
+  border-radius: var(--secondary_border_radius);
+}
+
+.testimonial_card img {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  border: 0.3rem solid var(--shadow_dark_color);
+  border-radius: 50%;
+}
+
+/* ================== Testimonials Section Ends ================== */
 
 /* ================== Footer Section Ends ================== */
 

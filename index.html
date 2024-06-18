@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subhro Mukherjee</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/index.css" />
   </head>
   <body>
@@ -486,7 +490,129 @@ Testimonials Section Starts
 ============================================= -->
 
       <section class="testimonials_section_box box_wrap box section_box">
-        testimonials
+        <div class="section_heading_box">
+          <h2>Testimonials</h2>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial_card box box_col box_center box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box box_col box_center box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box box_col box_center box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box box_col box_center box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box box_col box_center box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box box_col box_center box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box box_col box_center box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box box_col box_center box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box box_col box_center box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box box_col box_center box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box box_col box_center box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box box_col box_center box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </section>
 
       <!-- =============================================
@@ -547,6 +673,33 @@ Icons : https://ionic.io/ionicons Starts
 
     <!-- =============================================
 Icons : https://ionic.io/ionicons Ends 
+============================================= -->
+
+    <!-- =============================================
+Swiper JS : https://swiperjs.com/demos "Slides per view" Starts 
+
+Example : https://codesandbox.io/p/sandbox/tgc8gm?file=%2Findex.html 
+============================================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 60,
+        autoplay: {
+          delay: 6000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <!-- =============================================
+Swiper JS : https://swiperjs.com/demos "Slides per view" Ends 
 ============================================= -->
   </body>
 </html>
