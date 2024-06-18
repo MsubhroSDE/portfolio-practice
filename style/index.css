@@ -479,6 +479,29 @@ a {
 
 /* ================== About Me Section Ends ================== */
 
+/* ================== My Projects Section Ends ================== */
+
+.projects_section_box {
+  min-height: var(--page_height);
+  margin-top: var(--navbar_height);
+}
+
+.project_card {
+  border: var(--test-border);
+
+  align-self: stretch;
+  width: 30%;
+  padding: 1.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+
+  border-radius: 1.2rem;
+  box-shadow: 0 0 0.9rem var(--shadow_dark_color);
+}
+
+/* ================== My Projects Section Ends ================== */
+
 /* ================== Footer Section Ends ================== */
 
 /* ================== Footer Section Ends ================== */
