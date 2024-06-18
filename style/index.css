@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
 
 /* ================== Default CSS Reset Starts ================== */
 
@@ -86,6 +86,7 @@ a {
   --footer_light_color: hsl(0, 100%, 99%);
 
   --page_padding: 1.5rem 6rem;
+  --page_height: calc(100vh - var(--navbar_height));
 }
 
 /* ================== Root Variables Ends ================== */
@@ -108,10 +109,6 @@ a {
 .box_wrap {
   flex-wrap: wrap;
 }
-.section_box {
-  padding: var(--page_padding);
-  gap: var(--gap_xl);
-}
 
 .box_l {
   gap: var(--gap_l);
@@ -129,17 +126,32 @@ a {
   gap: var(--gap_xs);
 }
 
-/* .primary_button {
+.main_app_box {
+  border: var(--test-border);
+  background: var(--background_light_color);
+}
+
+.section_box {
+  border: var(--test-border);
+
+  width: 100%;
+  padding: var(--page_padding);
+  gap: var(--gap_xl);
+}
+
+.primary_button {
   display: inline-block;
+  width: 15rem;
+  height: 3.6rem;
   cursor: pointer;
   border: none;
   outline: none;
-  width: 15rem;
-  height: 3.6rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--primary_gradient);
+
   font-size: var(--font_size_m);
   font-weight: 700;
   color: var(--para_light_color);
@@ -148,27 +160,11 @@ a {
   transition: all 0.3s linear;
 }
 .primary_button:hover {
-  box-shadow: 0 0.9rem 1.2rem var(--primary_shadow_color);
+  box-shadow: 0 0.9rem 1.2rem var(--shadow_dark_color);
 }
 .primary_button:active {
-  box-shadow: 0 0.9rem 1.2rem var(--secondary_shadow_color);
-} */
-
-/* .main_box {
-  border: var(--test-border);
-
-  background-color: var(--background_dark_color);
-  display: flex;
-  flex-direction: column;
+  box-shadow: 0 0.9rem 1.2rem var(--shadow_light_color);
 }
-
-.section_box {
-  border: var(--test-border);
-
-  background-color: var(--background_light_color);
-  min-height: calc(100vh - var(--navbar_height));
-  padding: 1.2rem 4.5rem;
-} */
 
 /* .section_heading_box {
   border: var(--test-border);
@@ -210,21 +206,21 @@ a {
   font-weight: 700;
   color: var(--para_dark_color);
 } */
-/* 
+
 .h_l {
   color: var(--heading_dark_color);
   font-size: var(--font_size_l);
-  font-weight: 600;
+  font-weight: 700;
 }
 .h_m {
   color: var(--heading_dark_color);
   font-size: var(--font_size_m);
-  font-weight: 500;
+  font-weight: 600;
 }
 .h_s {
   color: var(--heading_light_color);
   font-size: var(--font_size_s);
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .p_l {
@@ -241,15 +237,16 @@ a {
   color: var(--para_light_color);
   font-size: var(--font_size_xs);
   font-weight: 300;
-} */
+}
+.text_center {
+  text-align: center;
+}
 
 /* ================== Reuseable Classes Ends ================== */
 
 /* ================== Header Section Starts ================== */
 
 .header_box {
-  border: var(--test-border);
-
   height: var(--navbar_height);
   background: var(--navbar_background_color);
   align-items: center;
@@ -300,3 +297,125 @@ a {
   background-color: var(--logo_dark_color);
 }
 /* ================== Header Section Ends ================== */
+
+/* ================== Hero Section Ends ================== */
+.hero_section_box {
+  min-height: var(--page_height);
+  background-color: var(--background_dark_color);
+}
+
+.hero_info_box {
+  border: var(--test-border);
+
+  width: 60%;
+}
+
+.hero_info_box h2 {
+  font-size: var(--font_size_xl);
+}
+.hero_info_box h1 {
+  font-size: 6.9rem;
+  color: var(--logo_dark_color);
+}
+.hero_info_box h3 {
+  font-size: var(--font_size_l);
+}
+.hero_social_link_box a {
+  font-size: var(--font_size_xl);
+}
+
+.hero_dp_box {
+  width: 36%;
+
+  position: relative;
+  border-radius: 51% 48% 42% 60% / 48% 45% 54% 51%;
+  overflow: hidden;
+  background: var(--primary_gradient);
+  animation: hero-wave-animation 5s linear infinite;
+}
+
+.hero_dp_image {
+  width: 90%;
+
+  display: block;
+  height: auto;
+  border-radius: 57% 42% 30% 60% / 48% 66% 36% 51%;
+  animation: wave-animation 3s linear infinite;
+}
+
+@keyframes hero-wave-animation {
+  0% {
+    border-radius: 51% 48% 42% 60% / 48% 45% 54% 51%;
+    background: linear-gradient(
+      to right,
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color)
+    );
+  }
+  25% {
+    border-radius: 57% 54% 48% 66% / 54% 51% 60% 57%;
+    background: linear-gradient(
+      to right,
+      var(--secondary_color),
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color)
+    );
+  }
+  50% {
+    border-radius: 48% 45% 39% 57% / 45% 42% 51% 48%;
+    background: linear-gradient(
+      to right,
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color)
+    );
+  }
+  75% {
+    border-radius: 42% 39% 33% 51% / 39% 36% 45% 42%;
+    background: linear-gradient(
+      to right,
+      var(--secondary_color),
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color)
+    );
+  }
+  100% {
+    border-radius: 51% 48% 42% 60% / 48% 45% 54% 51%;
+    background: linear-gradient(
+      to right,
+      var(--secondary_color),
+      var(--primary_color),
+      var(--secondary_color),
+      var(--primary_color)
+    );
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    border-radius: 57% 42% 30% 60% / 48% 66% 36% 51%;
+  }
+  50% {
+    border-radius: 36% 66% 48% 54% / 60% 45% 54% 36%;
+  }
+  100% {
+    border-radius: 57% 42% 30% 60% / 48% 66% 36% 51%;
+  }
+}
+
+/* ================== Hero Section Ends ================== */
+
+/* ================== About Me Section Ends ================== */
+
+/* ================== About Me Section Ends ================== */
+
+/* ================== Footer Section Ends ================== */
+
+/* ================== Footer Section Ends ================== */
