@@ -1,7 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+
+/* =============== Default CSS Reset Starts =============== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  background-color: lightskyblue;
+  font-family: "Ubuntu", sans-serif;
 }
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============== Default CSS Reset Ends =============== */
+
+/* =============== Root Variables Starts =============== */
+
+:root {
+  --test_border: 1px solid red;
+
+  --primary_color: hsl(180, 100%, 60%);
+  --secondary_color: hsl(240, 100%, 60%);
+
+  --helper_color: hsl(12, 100%, 60%);
+
+  --background_color_dark: hsl(300, 60%, 90%);
+  --background_color_light: hsl(30, 60%, 90%);
+
+  --logo_color_dark: hsl(30, 100%, 60%);
+  --logo_color_light: hsl(60, 100%, 60%);
+
+  --primary_border_radius: 1.2rem;
+  --secondary_border_radius: 0.6rem;
+
+  --nav_background_color: hsl(210, 60%, 81%);
+  --nav_dark_color: hsl(0, 60%, 30%);
+  --nav_light_color: hsl(300, 60%, 72%);
+  --nav_height: 6.9rem;
+
+  --font_size_xl: 2.1rem;
+  --font_size_l: 1.8rem;
+  --font_size_m: 1.5rem;
+  --font_size_s: 1.2rem;
+  --font_size_xs: 0.9rem;
+
+  --gap_xl: 3.3rem;
+  --gap_l: 2.7rem;
+  --gap_m: 2.1rem;
+  --gap_s: 1.5rem;
+  --gap_xs: 0.9rem;
+
+  --section_padding: 1.2rem 4.2rem;
+  --section_height: calc(100vh - var(--nav_height));
+}
+
+/* =============== Root Variables Ends =============== */
+
+/* =============== Reuseable Classes Starts =============== */
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.box_col {
+  flex-direction: column;
+}
+.box_center {
+  justify-content: center;
+  align-items: center;
+}
+.box_xl {
+  gap: var(--gap_xl);
+}
+.box_l {
+  gap: var(--gap_l);
+}
+.box_m {
+  gap: var(--gap_m);
+}
+.box_s {
+  gap: var(--gap_s);
+}
+.box_xs {
+  gap: var(--gap_xs);
+}
+.box_t {
+  border: var(--test_border);
+}
+
+/* =============== Reuseable Classes Ends =============== */
+
+/* =============== Navbar Section Starts =============== */
+
+.header_box {
+  border: var(--test_border);
+
+  padding: var(--section_padding);
+  height: var(--nav_height);
+  background-color: var(--nav_background_color);
+  align-items: center;
+}
+
+.logo_link:link,
+.logo_link:visited {
+  border: var(--test_border);
+
+  font-family: "Poppins", sans-serif;
+  padding: 0.3rem 1.2rem;
+  text-transform: capitalize;
+  font-size: var(--font_size_xl);
+  border-radius: var(--secondary_border_radius);
+  color: var(--logo_color_dark);
+  border: 0.3rem solid var(--logo_color_dark);
+  background-color: var(--logo_color_light);
+  transition: all 0.3s linear;
+}
+
+.logo_link:hover,
+.logo_link:active {
+  color: var(--logo_color_light);
+  border: 0.3rem solid var(--logo_color_light);
+  background-color: var(--logo_color_dark);
+}
+
+.nav_menu_box {
+  border: var(--test_border);
+}
+
+.nav_link:link,
+.nav_link:visited {
+  border: var(--test_border);
+
+  text-transform: capitalize;
+  font-size: var(--font_size_m);
+  color: var(--nav_dark_color);
+  transition: all 0.3s linear;
+}
+
+.nav_link:hover,
+.nav_link:active {
+  color: var(--nav_light_color);
+}
+
+/* =============== Navbar Section Ends =============== */
+
+/* =============== Footer Section Starts =============== */
+
+/* =============== Footer Section Ends =============== */
