@@ -3,31 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Subhro Mukherjee Portfolio</title>
+    <title>Subhro Mukherjee</title>
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./style/index.css" />
-
-    <!-- <script defer src="script/index.js"></script> -->
+    <link rel="stylesheet" href="style/backup.css" />
+    <script defer src="script/index.js"></script>
   </head>
   <body>
     <!-- =============================================
-              Header Section Starts
-      ============================================= -->
+Header Section Starts
+============================================= -->
 
-    <header class="header_box">
+    <header class="header_box box section_box">
       <div class="header_logo_box">
         <a href="#" class="logo_link">Subhro Mukherjee</a>
       </div>
 
-      <nav class="nav_menu_box">
-        <a href="#about" class="nav_link">about me</a>
-        <a href="#portfolio" class="nav_link">portfolio</a>
+      <nav class="nav_menu_box box box_m">
+        <a href="#about" class="nav_link">about</a>
         <a href="#projects" class="nav_link">projects</a>
+        <a href="#portfolio" class="nav_link">portfolio</a>
         <a href="#blogs" class="nav_link">blogs</a>
         <a href="#services" class="nav_link">services</a>
         <a href="#contact" class="nav_link">contact</a>
@@ -35,80 +33,92 @@
     </header>
 
     <!-- =============================================
-              Header Section Ends
-      ============================================= -->
+Header Section Ends
+============================================= -->
 
     <!-- =============================================
-              Main App Starts
-      ============================================= -->
-    <main class="main_box">
+Main App Starts
+============================================= -->
+
+    <main class="main_app_box box box_col">
       <!-- =============================================
-              Hero Section Starts
-      ============================================= -->
+Hero Section Starts
+============================================= -->
 
-      <section class="section_box hero_section_box">
-        <div class="hero_welcome_box">
-          <div class="hero_intro_box">
-            <h3 class="h_l">This is me</h3>
-            <h1>Subhro Mukherjee</h1>
-            <h2 class="h_m">I'm a <span>MERN Developer</span></h2>
-            <p class="p_l">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio corrupti magnam aliquam, alias veritatis similique in
-              esse illum id, assumenda vitae?
-            </p>
+      <section class="hero_section_box box section_box">
+        <div class="hero_info_box box box_col box_l">
+          <h2 class="h_l">This is me</h2>
+          <h1>Subhro Mukherjee</h1>
+          <h3 class="h_m">I'm a MERN Developer</h3>
+          <p class="p_l">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+            accusantium rem molestias soluta sed, nostrum quo placeat? Quos
+            eligendi cumque dolorum.
+          </p>
+
+          <div class="hero_social_link_box box box_l">
+            <a href="#">
+              <ion-icon
+                name="logo-facebook"
+                class="facebook_logo_link"
+              ></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon
+                name="logo-twitter"
+                class="twitter_logo_link"
+              ></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon
+                name="logo-whatsapp"
+                class="whatsapp_logo_link"
+              ></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-github" class="github_logo_link"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon
+                name="logo-linkedin"
+                class="linkedin_logo_link"
+              ></ion-icon>
+            </a>
           </div>
 
-          <div class="hero_social_links_box">
-            <a href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-
-            <a href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-
-            <a href="#">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-
-            <a href="#">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-
-            <a href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </div>
-
-          <div class="hero_buttons_box">
+          <div>
             <a href="#" class="primary_button">Hire Me</a>
           </div>
         </div>
 
-        <div class="hero_dp_box">
-          <!-- <img
+        <div class="hero_dp_box box_center">
+          <img
             src="images/subhro.jpg"
-            alt="This is the display picture of Subhro Mukherjee"
-          /> -->
+            alt="This is the display image of Subhro Mukherjee"
+            class="hero_dp_image"
+          />
         </div>
       </section>
 
       <!-- =============================================
-              Hero Section Ends
-      ============================================= -->
+Hero Section Ends
+============================================= -->
 
       <!-- =============================================
-              About Me Section Starts
-      ============================================= -->
+About Me Section Starts
+============================================= -->
 
-      <section class="section_box about_section_box">
+      <section class="about_section_box box box_wrap section_box">
         <div class="section_heading_box">
           <h2>About Me</h2>
         </div>
 
-        <div class="about_background_box">
-          <div class="intro_box">
+        <div class="about_background_box box box_col box_m">
+          <div class="box box_col box_s width_100">
             <p class="p_m">
               I am a creative and dynamic software developer with more than 6
               years of experience in developing robust code for IT companies. I
@@ -124,10 +134,10 @@
             </p>
           </div>
 
-          <div class="experience_box">
+          <div class="box box_col box_s width_100">
             <h3 class="h_l">Experience</h3>
 
-            <div class="background_card">
+            <div class="box width_100">
               <div>
                 <h5 class="h_m">Blue Space Labs Pvt. Ltd.</h5>
                 <h6 class="h_s">Software Developer</h6>
@@ -138,7 +148,7 @@
               </div>
             </div>
 
-            <div class="background_card">
+            <div class="box width_100">
               <div>
                 <h5 class="h_m">Tech Learning Solutions Pvt. Ltd.</h5>
                 <h6 class="h_s">Software Engineer</h6>
@@ -150,10 +160,10 @@
             </div>
           </div>
 
-          <div class="education_box">
+          <div class="box box_col box_s width_100">
             <h3 class="h_l">Education</h3>
 
-            <div class="background_card">
+            <div class="box width_100">
               <div>
                 <h5 class="h_m">West Bengal University of Technology</h5>
                 <h6 class="h_s">Bachelor of Technology</h6>
@@ -166,11 +176,11 @@
           </div>
         </div>
 
-        <div class="about_skills_box">
-          <div class="technical_skills_box">
+        <div class="about_skills_box box box_col box_m">
+          <div class="box box_col box_s width_100">
             <h3 class="h_l">Technical Skills</h3>
 
-            <div class="skill_box">
+            <div class="box box_col box_xs width_100">
               <h5 class="h_m">HTML5</h5>
 
               <div class="skills_rating skill_1">
@@ -178,7 +188,7 @@
               </div>
             </div>
 
-            <div class="skill_box">
+            <div class="box box_col box_xs width_100">
               <h5 class="h_m">CSS3 , SCSS & LESS</h5>
 
               <div class="skills_rating skill_2">
@@ -186,7 +196,7 @@
               </div>
             </div>
 
-            <div class="skill_box">
+            <div class="box box_col box_xs width_100">
               <h5 class="h_m">JavaScript & Typescript</h5>
 
               <div class="skills_rating skill_3">
@@ -194,7 +204,7 @@
               </div>
             </div>
 
-            <div class="skill_box">
+            <div class="box box_col box_xs width_100">
               <h5 class="h_m">React JS with Redux</h5>
 
               <div class="skills_rating skill_4">
@@ -202,7 +212,7 @@
               </div>
             </div>
 
-            <div class="skill_box">
+            <div class="box box_col box_xs width_100">
               <h5 class="h_m">Material UI, Ant UI & Chakra UI</h5>
 
               <div class="skills_rating skill_5">
@@ -210,7 +220,7 @@
               </div>
             </div>
 
-            <div class="skill_box">
+            <div class="box box_col box_xs width_100">
               <h5 class="h_m">Node JS, Express JS, Mongo DB & Mongoose</h5>
 
               <div class="skills_rating skill_6">
@@ -224,21 +234,21 @@
       </section>
 
       <!-- =============================================
-           About Me Section Ends
-      ============================================= -->
+About Me Section Ends
+============================================= -->
 
       <!-- =============================================
-              Projects Section Starts
-      ============================================= -->
+My Projects Section Starts
+============================================= -->
 
-      <section class="section_box projects_section_box">
+      <section class="projects_section_box box box_wrap section_box">
         <div class="section_heading_box">
           <h2>Projects</h2>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="projects_list_box">
-          <div class="project_card">
+        <div class="box box_wrap box_m">
+          <div class="project_card box box_col box_s">
             <h3 class="h_l">Bluwyre</h3>
             <p class="p_l">2021 - Present</p>
             <p class="p_m">
@@ -257,7 +267,7 @@
             </p>
           </div>
 
-          <div class="project_card">
+          <div class="project_card box box_col box_s">
             <h3 class="h_l">Ezywizy</h3>
             <p class="p_l">2022 - 2023</p>
             <p class="p_m">
@@ -275,7 +285,7 @@
             </p>
           </div>
 
-          <div class="project_card">
+          <div class="project_card box box_col box_s">
             <h3 class="h_l">Mauritius Police Force</h3>
             <p class="p_l">2021 - 2022</p>
             <p class="p_m">
@@ -295,156 +305,175 @@
           </div>
         </div>
       </section>
+      <!-- =============================================
+My Projects Section Ends
+============================================= -->
 
       <!-- =============================================
-       Projects Section Ends
-      ============================================= -->
+My Blogs Section Starts
+============================================= -->
 
-      <!-- =============================================
-              My Blogs Section Starts
-      ============================================= -->
-
-      <section class="section_box blogs_section_box">
+      <section class="blogs_section_box box box_wrap section_box">
         <div class="section_heading_box">
           <h2>My Blogs</h2>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="blogs_filter_box">
-          <button class="primary_button">All</button>
-          <button class="primary_button">Technology</button>
-          <button class="primary_button">Productivity</button>
-        </div>
-
-        <div class="blogs_list_box">
-          <div class="blog_card">
-            <img src="images/subhro.jpg" alt="TitleOfBlog" />
-            <h3 class="h_m">title</h3>
-
-            <a href="#" target="_blank" class="blog_overlay p_l">
-              Continue Reading ...
-            </a>
+        <div class="box box_col box_m width_100">
+          <div class="blogs_filter_box box_center box_l">
+            <button class="primary_button">All</button>
+            <button class="primary_button">Technology</button>
+            <button class="primary_button">Productivity</button>
           </div>
 
-          <div class="blog_card">
-            <img src="images/subhro.jpg" alt="TitleOfBlog" />
-            <h3 class="h_m">title</h3>
+          <div class="blogs_list_box box box_wrap box_m">
+            <div class="blog_card">
+              <img src="images/subhro.jpg" alt="TitleOfBlog" />
+              <h3 class="h_s">
+                title : Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                Sequi.
+              </h3>
 
-            <a href="#" target="_blank" class="blog_overlay p_l">
-              Continue Reading ...
-            </a>
-          </div>
+              <a href="#" target="_blank" class="blog_overlay p_l">
+                Continue Reading ...
+              </a>
+            </div>
 
-          <div class="blog_card">
-            <img src="images/subhro.jpg" alt="TitleOfBlog" />
-            <h3 class="h_m">title</h3>
+            <div class="blog_card">
+              <img src="images/subhro.jpg" alt="TitleOfBlog" />
+              <h3 class="h_s">
+                title : Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                Sequi.
+              </h3>
 
-            <a href="#" target="_blank" class="blog_overlay p_l">
-              Continue Reading ...
-            </a>
-          </div>
+              <a href="#" target="_blank" class="blog_overlay p_l">
+                Continue Reading ...
+              </a>
+            </div>
 
-          <div class="blog_card">
-            <img src="images/subhro.jpg" alt="TitleOfBlog" />
-            <h3 class="h_m">title</h3>
+            <div class="blog_card">
+              <img src="images/subhro.jpg" alt="TitleOfBlog" />
+              <h3 class="h_s">
+                title : Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                Sequi.
+              </h3>
 
-            <a href="#" target="_blank" class="blog_overlay p_l">
-              Continue Reading ...
-            </a>
-          </div>
+              <a href="#" target="_blank" class="blog_overlay p_l">
+                Continue Reading ...
+              </a>
+            </div>
 
-          <div class="blog_card">
-            <img src="images/subhro.jpg" alt="TitleOfBlog" />
-            <h3 class="h_m">title</h3>
+            <div class="blog_card">
+              <img src="images/subhro.jpg" alt="TitleOfBlog" />
+              <h3 class="h_s">
+                title : Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                Sequi.
+              </h3>
 
-            <a href="#" target="_blank" class="blog_overlay p_l">
-              Continue Reading ...
-            </a>
-          </div>
+              <a href="#" target="_blank" class="blog_overlay p_l">
+                Continue Reading ...
+              </a>
+            </div>
 
-          <div class="blog_card">
-            <img src="images/subhro.jpg" alt="TitleOfBlog" />
-            <h3 class="h_m">title</h3>
+            <div class="blog_card">
+              <img src="images/subhro.jpg" alt="TitleOfBlog" />
+              <h3 class="h_s">
+                title : Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                Sequi.
+              </h3>
 
-            <a href="#" target="_blank" class="blog_overlay p_l">
-              Continue Reading ...
-            </a>
+              <a href="#" target="_blank" class="blog_overlay p_l">
+                Continue Reading ...
+              </a>
+            </div>
+
+            <div class="blog_card">
+              <img src="images/subhro.jpg" alt="TitleOfBlog" />
+              <h3 class="h_s">
+                title : Lorem, ipsum dolor sit amet consectetur adipisicing elit
+                Sequi.
+              </h3>
+
+              <a href="#" target="_blank" class="blog_overlay p_l">
+                Continue Reading ...
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- =============================================
-       My Blogs Section Ends
-      ============================================= -->
+My Blogs Section Ends
+============================================= -->
 
       <!-- =============================================
-              Services Section Starts
-      ============================================= -->
+My Services Section Starts
+============================================= -->
 
-      <section class="section_box services_section_box">
+      <section class="services_section_box box box_wrap section_box">
         <div class="section_heading_box">
           <h2>Services</h2>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="service_list_box">
-          <div class="service_card">
+        <div class="box box_wrap box_m">
+          <div class="service_card box box_col box_s">
             <ion-icon name="desktop-outline" class="service_icon"></ion-icon>
             <h3 class="h_m">Web Design & Development</h3>
-            <p class="p_m">
+            <p class="p_m text_center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus quaerat pariatur vitae velit. Rem suscipit dolorem
               accusamus non. Eum, quia voluptas.
             </p>
           </div>
 
-          <div class="service_card">
+          <div class="service_card box box_col box_s">
             <ion-icon
               name="phone-portrait-outline"
               class="service_icon"
             ></ion-icon>
             <h3 class="h_m">Mobile App Development</h3>
-            <p class="p_m">
+            <p class="p_m text_center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus quaerat pariatur vitae velit. Rem suscipit dolorem
               accusamus non. Eum, quia voluptas.
             </p>
           </div>
 
-          <div class="service_card">
+          <div class="service_card box box_col box_s">
             <ion-icon name="bar-chart-outline" class="service_icon"></ion-icon>
             <h3 class="h_m">Search Engine Optimization</h3>
-            <p class="p_m">
+            <p class="p_m text_center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus quaerat pariatur vitae velit. Rem suscipit dolorem
               accusamus non. Eum, quia voluptas.
             </p>
           </div>
 
-          <div class="service_card">
+          <div class="service_card box box_col box_s">
             <ion-icon name="construct-outline" class="service_icon"></ion-icon>
             <h3 class="h_m">Support & Maintenance</h3>
-            <p class="p_m">
+            <p class="p_m text_center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus quaerat pariatur vitae velit. Rem suscipit dolorem
               accusamus non. Eum, quia voluptas.
             </p>
           </div>
 
-          <div class="service_card">
+          <div class="service_card box box_col box_s">
             <ion-icon name="rocket-outline" class="service_icon"></ion-icon>
             <h3 class="h_m">Brand development</h3>
-            <p class="p_m">
+            <p class="p_m text_center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus quaerat pariatur vitae velit. Rem suscipit dolorem
               accusamus non. Eum, quia voluptas.
             </p>
           </div>
 
-          <div class="service_card">
+          <div class="service_card box box_col box_s">
             <ion-icon name="people-outline" class="service_icon"></ion-icon>
             <h3 class="h_m">Training & Internship</h3>
-            <p class="p_m">
+            <p class="p_m text_center">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Doloribus quaerat pariatur vitae velit. Rem suscipit dolorem
               accusamus non. Eum, quia voluptas.
@@ -454,154 +483,177 @@
       </section>
 
       <!-- =============================================
-       Services Section Ends
-      ============================================= -->
+My Services Section Ends
+============================================= -->
 
       <!-- =============================================
-              Testimonials Section Starts
-      ============================================= -->
+Testimonials Section Starts
+============================================= -->
 
-      <section class="section_box testimonials_section_box">
+      <section class="testimonials_section_box box_wrap box section_box">
         <div class="section_heading_box">
           <h2>Testimonials</h2>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="testimonial_swiper_box">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonial_card">
-                  <p class="p_l">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti exercitationem incidunt culpa explicabo qui iste!
-                    Illum, repudiandae iure quia molestiae ipsam culpa eos
-                    aliquid vel velit placeat quasi voluptatem laborum.
-                  </p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial_card box_center box_col box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
 
-                  <div class="testimonial_author">
-                    <img
-                      src="images/subhro.jpg"
-                      alt="Testimonials by Subhro Mukherjee"
-                    />
-                    <p class="h_m">Subhro Mukherjee</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial_card">
-                  <p class="p_l">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti exercitationem incidunt culpa explicabo qui iste!
-                    Illum, repudiandae iure quia molestiae ipsam culpa eos
-                    aliquid vel velit placeat quasi voluptatem laborum.
-                  </p>
-
-                  <div class="testimonial_author">
-                    <img
-                      src="images/subhro.jpg"
-                      alt="Testimonials by Subhro Mukherjee"
-                    />
-                    <p class="h_m">Subhro Mukherjee</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial_card">
-                  <p class="p_l">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti exercitationem incidunt culpa explicabo qui iste!
-                    Illum, repudiandae iure quia molestiae ipsam culpa eos
-                    aliquid vel velit placeat quasi voluptatem laborum.
-                  </p>
-
-                  <div class="testimonial_author">
-                    <img
-                      src="images/subhro.jpg"
-                      alt="Testimonials by Subhro Mukherjee"
-                    />
-                    <p class="h_m">Subhro Mukherjee</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial_card">
-                  <p class="p_l">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti exercitationem incidunt culpa explicabo qui iste!
-                    Illum, repudiandae iure quia molestiae ipsam culpa eos
-                    aliquid vel velit placeat quasi voluptatem laborum.
-                  </p>
-
-                  <div class="testimonial_author">
-                    <img
-                      src="images/subhro.jpg"
-                      alt="Testimonials by Subhro Mukherjee"
-                    />
-                    <p class="h_m">Subhro Mukherjee</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonial_card">
-                  <p class="p_l">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti exercitationem incidunt culpa explicabo qui iste!
-                    Illum, repudiandae iure quia molestiae ipsam culpa eos
-                    aliquid vel velit placeat quasi voluptatem laborum.
-                  </p>
-
-                  <div class="testimonial_author">
-                    <img
-                      src="images/subhro.jpg"
-                      alt="Testimonials by Subhro Mukherjee"
-                    />
-                    <p class="h_m">Subhro Mukherjee</p>
-                  </div>
+                <div class="box_center box_col box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
                 </div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box_center box_col box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box_center box_col box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box_center box_col box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box_center box_col box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box_center box_col box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box_center box_col box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box_center box_col box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box_center box_col box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial_card box_center box_col box_m">
+                <p class="p_l">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Deleniti exercitationem incidunt culpa explicabo qui iste!
+                  Illum, repudiandae iure quia molestiae ipsam culpa eos aliquid
+                  vel velit placeat quasi voluptatem laborum.
+                </p>
+
+                <div class="box_center box_col box_s">
+                  <img
+                    src="images/subhro.jpg"
+                    alt="Testimonials by Subhro Mukherjee"
+                  />
+                  <p class="h_m">Subhro Mukherjee</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!-- =============================================
-       Testimonials Section Ends
-      ============================================= -->
+Testimonials Section Ends
+============================================= -->
 
       <!-- =============================================
-              Freelance Banner Section Starts
-      ============================================= -->
+Freelance Banner Section Starts
+============================================= -->
 
-      <section class="section_box freelance_banner_section_box">
-        <div class="freelance_banner_content">
+      <section class="freelance_banner_section_box box box_wrap section_box">
+        <div class="freelance_banner_content box_center box_col box_l">
           <h2>I'm <span>available</span> for Freelancing.</h2>
-          <p>
+
+          <p class="text_center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             modi odio quisquam! Laboriosam ratione aspernatur, porro velit
             facilis beatae autem soluta, quis aut culpa iste error consequuntur
             est ea enim!
           </p>
+
           <a href="#" class="primary_button">Let's Discuss</a>
         </div>
       </section>
 
       <!-- =============================================
-       Freelance Banner Section Ends
-      ============================================= -->
+Freelance Banner Section Ends
+============================================= -->
 
       <!-- =============================================
-              Contact Me Section Starts
-      ============================================= -->
+Contact Me Section Starts
+============================================= -->
 
-      <section class="section_box contacts_section_box">
+      <section class="contact_section_box box box_wrap section_box">
         <div class="section_heading_box">
           <h2>Contact Me</h2>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
-        <div class="contact_info_box">
+        <div class="contact_info_box box box_col box_s">
           <div class="contact_info_card">
             <ion-icon name="call-outline" class="contact_icon"> </ion-icon>
             <p class="p_m">+91-8777548726</p>
@@ -614,7 +666,7 @@
 
           <div class="contact_info_card">
             <ion-icon name="location-outline" class="contact_icon"> </ion-icon>
-            <div class="contact_address_box">
+            <div class="box box_col box_s width_100">
               <p class="p_m">Kolkata, West Bengal, India</p>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.21689608591!2d88.26494985854566!3d22.53556493799616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1718635740022!5m2!1sen!2sin"
@@ -627,41 +679,48 @@
         </div>
 
         <form
+          class="contact_form_box box box_col box_m"
           action="https://formspree.io/f/mpzvvnbp"
           method="POST"
-          class="contact_form_box"
         >
-          <div class="input_card">
+          <div class="width_100">
             <label for="Name"></label>
             <input
               type="text"
               name="Name"
               id="Name"
               placeholder="Enter Your Name . . ."
+              required
+              minlength="3"
+              maxlength="45"
             />
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <label for="Email"></label>
             <input
               type="email"
               name="Email"
               id="Email"
               placeholder="Enter Your Email Id . . ."
+              required
             />
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <label for="Subject"></label>
             <input
               type="text"
               name="Subject"
               id="Subject"
               placeholder="Enter Message Subject . . ."
+              required
+              minlength="9"
+              maxlength="90"
             />
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <label for="Message"></label>
             <textarea
               name="Message"
@@ -669,30 +728,34 @@
               placeholder="Enter Your Message . . ."
               cols="30"
               rows="6"
+              required
+              minlength="12"
+              maxlength="450"
             ></textarea>
           </div>
 
-          <div class="input_card">
+          <div class="width_100">
             <button type="submit" class="primary_button">Send Message</button>
           </div>
         </form>
       </section>
 
       <!-- =============================================
-       Contact Me Section Ends
-      ============================================= -->
+Contact Me Section Ends
+============================================= -->
     </main>
-    <!-- =============================================
-            Main App Ends
-      ============================================= -->
 
     <!-- =============================================
-              Footer Section Starts
-      ============================================= -->
+Main App Ends
+============================================= -->
 
-    <footer class="footer_box">
-      <div class="footer_about_box">
-        <h3 class="h_l">Subhro Mukherjee</h3>
+    <!-- =============================================
+Footer Section Starts
+============================================= -->
+
+    <footer class="footer_box box box_wrap section_box">
+      <div class="footer_about_box box box_col box_s">
+        <h2 class="h_l">Subhro Mukherjee</h2>
 
         <p class="p_m">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
@@ -700,7 +763,7 @@
         </p>
       </div>
 
-      <div class="footer_quick_links_box">
+      <div class="footer_quick_links_box box box_col box_s">
         <h3 class="h_m">Quick Links</h3>
 
         <a href="#" class="footer_links">
@@ -729,7 +792,7 @@
         >
       </div>
 
-      <div class="footer_services_link_box">
+      <div class="footer_services_link_box box box_col box_s">
         <h3 class="h_m">Services Links</h3>
 
         <a href="#" class="footer_links">
@@ -758,47 +821,52 @@
         </a>
       </div>
 
-      <div class="footer_contact_box">
-        <h3 class="h_m">Have a Question ?</h3>
+      <div class="footer_contact_box box box_col box_m">
+        <div class="box box_col box_s width_100">
+          <h3 class="h_m">Have a Question ?</h3>
 
-        <address>
-          <ion-icon name="location-outline"></ion-icon>
-          Kolkata, India
-        </address>
-        <a href="tel:+918777548726" class="footer_links">
-          <ion-icon name="call-outline"></ion-icon>
-          +91-8777548726
-        </a>
-        <a href="mailto:msubhro.mukherjee@gmail.com" class="footer_links">
-          <ion-icon name="mail-outline"></ion-icon>
-          msubhro.mukherjee@gmail.com
-        </a>
-
-        <h3 class="h_m">Follow Me</h3>
-        <div class="footer_social_links_box">
-          <a href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
+          <address>
+            <ion-icon name="location-outline"></ion-icon>
+            Kolkata, India
+          </address>
+          <a href="tel:+918777548726" class="footer_links">
+            <ion-icon name="call-outline"></ion-icon>
+            +91-8777548726
           </a>
-
-          <a href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
+          <a href="mailto:msubhro.mukherjee@gmail.com" class="footer_links">
+            <ion-icon name="mail-outline"></ion-icon>
+            msubhro.mukherjee@gmail.com
           </a>
+        </div>
 
-          <a href="#">
-            <ion-icon name="logo-whatsapp"></ion-icon>
-          </a>
+        <div class="box box_col box_s width_100">
+          <h3 class="h_m">Follow Me</h3>
 
-          <a href="#">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
+          <div class="footer_social_links_box box box_m width_100">
+            <a href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
 
-          <a href="#">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
+            <a href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+
+            <a href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="footer_credits_box">
+      <div class="footer_credits_box box_center box_col box_xs">
         <h4>
           This wesite is made with
           <span>&hearts;</span>
@@ -810,10 +878,12 @@
     </footer>
 
     <!-- =============================================
-             Footer Section Ends
-      ============================================= -->
+Footer Section Ends
+============================================= -->
 
-    <!-- Icons : https://ionic.io/ionicons Starts -->
+    <!-- =============================================
+Icons : https://ionic.io/ionicons Starts 
+============================================= -->
 
     <script
       type="module"
@@ -824,10 +894,15 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <!-- Icons : https://ionic.io/ionicons Ends -->
+    <!-- =============================================
+Icons : https://ionic.io/ionicons Ends 
+============================================= -->
 
-    <!-- Swiper JS : https://swiperjs.com/demos "Slides per view" Starts -->
-    <!-- Example : https://codesandbox.io/p/sandbox/tgc8gm?file=%2Findex.html -->
+    <!-- =============================================
+Swiper JS : https://swiperjs.com/demos "Slides per view" Starts 
+
+Example : https://codesandbox.io/p/sandbox/tgc8gm?file=%2Findex.html 
+============================================= -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -846,6 +921,8 @@
       });
     </script>
 
-    <!-- Swiper JS : https://swiperjs.com/demos "Slides per view" Ends -->
+    <!-- =============================================
+Swiper JS : https://swiperjs.com/demos "Slides per view" Ends 
+============================================= -->
   </body>
 </html>
