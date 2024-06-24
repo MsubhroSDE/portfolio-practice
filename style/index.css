@@ -57,6 +57,17 @@ a {
   --primary_border_radius: 0.3rem;
   --secondary_border_radius: 1.2rem;
 
+  --primary_gradient: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  --secondary_gradient: linear-gradient(
+    to left,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+
   --navbar_height: 7.2rem;
   --navbar_color_dark: hsl(240, 100%, 30%);
   --navbar_color_light: hsl(240, 100%, 60%);
@@ -68,9 +79,11 @@ a {
   --font_size_s: 1.2rem;
   --font_size_xs: 0.9rem;
 
-  --gap_l: 2.1rem;
-  --gap_m: 1.5rem;
-  --gap_s: 0.9rem;
+  --gap_xl: 3rem;
+  --gap_l: 2.4rem;
+  --gap_m: 1.8rem;
+  --gap_s: 1.2rem;
+  --gap_xs: 0.6rem;
 
   --section_padding: 1.2rem 4.8rem;
   --section_height: calc(100vh - var(--navbar_height));
@@ -120,11 +133,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    to right,
-    var(--primary_color),
-    var(--secondary_color)
-  );
+  background: var(--primary_gradient);
   padding: 0.3rem;
   font-size: var(--font_size_m);
   font-weight: 700;
@@ -144,7 +153,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: calc(var(--gap_l) + 1.2rem);
+  gap: var(--gap_xl);
 }
 
 .sub_section_box {
@@ -165,7 +174,9 @@ a {
 .gap_s {
   gap: var(--gap_s);
 }
-
+.gap_xs {
+  gap: var(--gap_xs);
+}
 .column {
   flex-direction: column;
 }
@@ -236,12 +247,15 @@ a {
   border: var(--test_border);
 
   width: 60%;
-  gap: calc(var(--gap_l) + 1.5rem);
+  gap: var(--gap_xl);
 }
 .hero_intro_box h1 {
   color: var(--logo_color_dark);
   font-size: calc(var(--font_size_xl) + 3rem);
   font-weight: 900;
+}
+.hero_social_link_box {
+  gap: var(--gap_xl);
 }
 
 .hero_social_link_box a {
@@ -259,6 +273,68 @@ a {
 }
 
 /* =============== Hero Section Ends =============== */
+
+/* =============== About Me Section Starts =============== */
+
+.about_section {
+}
+
+.section_heading {
+  width: 100%;
+}
+
+.about_intro_box,
+.about_skill_box {
+  width: 45%;
+}
+
+.about_card {
+}
+.skill_card {
+}
+
+.skill_rating {
+  width: 100%;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--background_color_light);
+  border-radius: var(--secondary_border_radius);
+  position: relative;
+}
+.skill_rating span {
+  padding-right: 0.6rem;
+}
+.skill_rating::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: var(--secondary_border_radius);
+  background: var(--primary_gradient);
+}
+
+.skill_1::before {
+  width: 90%;
+}
+.skill_2::before {
+  width: 75%;
+}
+.skill_3::before {
+  width: 65%;
+}
+.skill_4::before {
+  width: 85%;
+}
+.skill_5::before {
+  width: 75%;
+}
+.skill_6::before {
+  width: 60%;
+}
+/* =============== About Me Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
