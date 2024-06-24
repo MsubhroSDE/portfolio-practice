@@ -49,6 +49,11 @@ a {
   --background_color_dark: hsl(30, 60%, 60%);
   --background_color_light: hsl(30, 60%, 90%);
 
+  --heading_color_dark: hsl(90, 30%, 30%);
+  --heading_color_light: hsl(120, 30%, 60%);
+  --para_color_dark: hsl(210, 30%, 30%);
+  --para_color_light: hsl(240, 30%, 60%);
+
   --primary_border_radius: 0.3rem;
   --secondary_border_radius: 1.2rem;
 
@@ -63,9 +68,9 @@ a {
   --font_size_s: 1.2rem;
   --font_size_xs: 0.9rem;
 
-  --gap_l: 3rem;
-  --gap_m: 2.1rem;
-  --gap_s: 1.2rem;
+  --gap_l: 2.1rem;
+  --gap_m: 1.5rem;
+  --gap_s: 0.9rem;
 
   --section_padding: 1.2rem 4.8rem;
   --section_height: calc(100vh - var(--navbar_height));
@@ -77,9 +82,59 @@ a {
 .bt {
   border: var(--test_border);
 }
+.h_l {
+  font-size: var(--font_size_l);
+  color: var(--heading_color_dark);
+  font-weight: 700;
+}
+.h_m {
+  font-size: var(--font_size_m);
+  color: var(--heading_color_light);
+  font-weight: 600;
+}
+.h_s {
+  font-size: var(--font_size_s);
+  color: var(--heading_color_dark);
+  font-weight: 500;
+}
+.p_l {
+  font-size: var(--font_size_m);
+  color: var(--para_color_dark);
+  font-weight: 700;
+}
+.p_m {
+  font-size: var(--font_size_s);
+  color: var(--para_color_dark);
+  font-weight: 500;
+}
+.p_s {
+  font-size: var(--font_size_xs);
+  color: var(--para_color_light);
+  font-weight: 300;
+}
+
+.primary_button {
+  outline: none;
+  border: none;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  padding: 0.3rem;
+  font-size: var(--font_size_m);
+  font-weight: 700;
+}
 /* =============== Reusable Classes Ends =============== */
 
 /* =============== App Section Classes Starts =============== */
+.main_app_box {
+  background-color: var(--background_color_dark);
+}
 
 .section_box {
   border: var(--test_border);
@@ -89,7 +144,7 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: var(--gap_l);
+  gap: calc(var(--gap_l) + 1.2rem);
 }
 
 .sub_section_box {
@@ -99,13 +154,26 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+}
+
+.gap_l {
+  gap: var(--gap_l);
+}
+.gap_m {
   gap: var(--gap_m);
 }
-
-.column_box {
-  flex-direction: column;
+.gap_s {
+  gap: var(--gap_s);
 }
 
+.column {
+  flex-direction: column;
+}
+.center_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .width_100 {
   width: 100%;
 }
@@ -155,6 +223,42 @@ a {
 }
 
 /* =============== Navbar Section Ends =============== */
+
+/* =============== Hero Section Starts =============== */
+
+.hero_section {
+  min-height: var(--section_height);
+  background-color: var(--background_color_light);
+  align-items: center;
+}
+
+.hero_intro_box {
+  border: var(--test_border);
+
+  width: 60%;
+  gap: calc(var(--gap_l) + 1.5rem);
+}
+.hero_intro_box h1 {
+  color: var(--logo_color_dark);
+  font-size: calc(var(--font_size_xl) + 3rem);
+  font-weight: 900;
+}
+
+.hero_social_link_box a {
+  font-size: var(--font_size_xl);
+}
+
+.hero_dp_box {
+  border: var(--test_border);
+
+  width: 30%;
+}
+
+.hero_dp_box img {
+  width: 90%;
+}
+
+/* =============== Hero Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
