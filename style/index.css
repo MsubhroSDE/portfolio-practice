@@ -22,6 +22,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
+  line-height: 1.8;
 }
 a {
   text-decoration: none;
@@ -74,16 +75,18 @@ a {
   --navbar_light_color: hsl(30, 100%, 60%);
   --navbar_background_color: hsl(300, 100%, 90%);
 
-  --footer_dark_color: hsl(0, 0%, 30%);
-  --footer_light_color: hsl(30, 30%, 60%);
-  --footer_background_color: hsl(300, 60%, 90%);
+  --footer_dark_color: hsl(0, 30%, 30%);
+  --footer_light_color: hsl(30, 60%, 60%);
+  --footer_background_color: hsl(300, 0%, 90%);
   --footer_heading_color: hsl(360, 100%, 60%);
 }
 
 /* =============== Root Variables Ends =============== */
 
 /* =============== Reusable Classes Starts =============== */
-
+.bt {
+  border: var(--test-border);
+}
 .box {
   display: flex;
   justify-content: space-between;
@@ -118,6 +121,38 @@ a {
 .w_50 {
   width: 50%;
 }
+
+.h_l {
+  color: var(--heading_dark_color);
+  font-size: var(--font_size_l);
+  font-weight: 700;
+}
+.h_m {
+  color: var(--heading_light_color);
+  font-size: var(--font_size_m);
+  font-weight: 600;
+}
+.h_s {
+  color: var(--heading_light_color);
+  font-size: var(--font_size_s);
+  font-weight: 500;
+}
+.p_l {
+  color: var(--para_dark_color);
+  font-size: var(--font_size_m);
+  font-weight: 700;
+}
+.p_m {
+  color: var(--para_dark_color);
+  font-size: var(--font_size_s);
+  font-weight: 500;
+}
+.p_s {
+  color: var(--para_light_color);
+  font-size: var(--font_size_xs);
+  font-weight: 300;
+}
+
 /* =============== Reusable Classes Ends =============== */
 
 /* =============== App Classes Starts =============== */
@@ -188,6 +223,21 @@ a {
 
 .footer_box h3 {
   color: var(--footer_heading_color);
+}
+
+.footer_about_box,
+.footer_quick_links_box,
+.footer_service_links_box,
+.footer_contact_box {
+  border: var(--test-border);
+
+  width: 21%;
+}
+
+.footer_credits {
+  border: var(--test-border);
+
+  width: 100%;
 }
 
 /* =============== Footer Section Ends =============== */
