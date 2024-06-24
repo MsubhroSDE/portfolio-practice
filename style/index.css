@@ -54,9 +54,6 @@ h6 {
   --navbar_color_light: hsl(240, 100%, 60%);
   --navbar_background_color: hsl(180, 100%, 60%);
 
-  --primary_shadow_color: hsl(210, 100%, 72%);
-  --secondary_shadow_color: hsl(120, 100%, 72%);
-
   --primary_border_radius: 0.3rem;
   --secondary_border_radius: 1.2rem;
 
@@ -121,6 +118,9 @@ h6 {
 .box_xs {
   gap: var(--gap_xs);
 }
+.w_100 {
+  width: 100%;
+}
 
 .primary_button {
   outline: none;
@@ -137,7 +137,7 @@ h6 {
 }
 .primary_button:hover,
 .primary_button:active {
-  box-shadow: 0 0 0.6rem var(--primary_shadow_color);
+  box-shadow: 0 0 0.6rem var(--helper_color);
 }
 
 .h_l {
@@ -148,7 +148,7 @@ h6 {
 .h_m {
   font-weight: 600;
   font-size: var(--font_size_m);
-  color: var(--heading_color_light);
+  color: var(--heading_color_dark);
 }
 .h_s {
   font-weight: 500;
@@ -170,6 +170,9 @@ h6 {
   font-size: var(--font_size_xs);
   color: var(--para_color_light);
 }
+.text_center {
+  text-align: center;
+}
 /* =============== Reusable Classes Ends =============== */
 
 /* =============== App Section Classes Starts =============== */
@@ -186,6 +189,39 @@ h6 {
   gap: var(--gap_xl);
 }
 
+.section_heading h2 {
+  color: var(--heading_color_dark);
+  font-size: var(--font_size_xl);
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+.section_heading h2::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: var(--primary_gradient);
+}
+.section_heading h2::after {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 1.1rem;
+  width: 21rem;
+  height: 0.3rem;
+  background: var(--secondary_gradient);
+}
+
+.section_heading p {
+  color: var(--para_color_dark);
+  font-size: var(--font_size_l);
+  font-weight: 700;
+}
+
 /* =============== App Section Classes Ends =============== */
 
 /* =============== Navbar Section Starts =============== */
@@ -194,6 +230,10 @@ h6 {
   background-color: var(--navbar_background_color);
   height: var(--navbar_height);
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 69;
 }
 
 .nav_logo_link:link,
@@ -268,6 +308,26 @@ h6 {
   width: 90%;
 }
 /* =============== Hero Section Ends =============== */
+
+/* =============== About Me Section Starts =============== */
+
+.about_box {
+}
+
+.section_heading {
+  border: var(--test-border);
+
+  width: 100%;
+}
+
+.about_intro_box,
+.about_skills_box {
+  border: var(--test-border);
+
+  width: 45%;
+}
+
+/* =============== About Me Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
