@@ -44,13 +44,32 @@ h6 {
   --background_color_dark: hsl(150, 100%, 90%);
   --background_color_light: hsl(30, 100%, 90%);
 
+  --heading_color_dark: hsl(240, 30%, 30%);
+  --heading_color_light: hsl(180, 30%, 60%);
+  --para_color_dark: hsl(120, 30%, 30%);
+  --para_color_light: hsl(60, 30%, 60%);
+
   --navbar_height: 7.2rem;
   --navbar_color_dark: hsl(360, 100%, 60%);
   --navbar_color_light: hsl(240, 100%, 60%);
   --navbar_background_color: hsl(180, 100%, 60%);
 
-  --primary_border_radius: 0.6rem;
+  --primary_shadow_color: hsl(210, 100%, 72%);
+  --secondary_shadow_color: hsl(120, 100%, 72%);
+
+  --primary_border_radius: 0.3rem;
   --secondary_border_radius: 1.2rem;
+
+  --primary_gradient: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  --secondary_gradient: linear-gradient(
+    to left,
+    var(--primary_color),
+    var(--secondary_color)
+  );
 
   --font_size_xl: 2.1rem;
   --font_size_l: 1.8rem;
@@ -65,13 +84,15 @@ h6 {
   --gap_xs: 0.6rem;
 
   --section_padding: 1.2rem 4.8rem;
-  --section_height: calc(100vh - var(var(--navbar_height)));
+  --section_height: calc(100vh - var(--navbar_height));
 }
 
 /* =============== Root Variables Ends =============== */
 
 /* =============== Reusable Classes Starts =============== */
-
+.bt {
+  border: var(--test-border);
+}
 .box {
   display: flex;
   justify-content: space-between;
@@ -101,6 +122,54 @@ h6 {
   gap: var(--gap_xs);
 }
 
+.primary_button {
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  width: 15rem;
+  background: var(--primary_gradient);
+  font-size: var(--font_size_m);
+  font-weight: bold;
+  border-radius: var(--primary_border_radius);
+}
+.primary_button:hover,
+.primary_button:active {
+  box-shadow: 0 0 0.6rem var(--primary_shadow_color);
+}
+
+.h_l {
+  font-weight: 700;
+  font-size: var(--font_size_l);
+  color: var(--heading_color_dark);
+}
+.h_m {
+  font-weight: 600;
+  font-size: var(--font_size_m);
+  color: var(--heading_color_light);
+}
+.h_s {
+  font-weight: 500;
+  font-size: var(--font_size_s);
+  color: var(--heading_color_light);
+}
+.p_l {
+  font-weight: 700;
+  font-size: var(--font_size_m);
+  color: var(--para_color_dark);
+}
+.p_m {
+  font-weight: 500;
+  font-size: var(--font_size_s);
+  color: var(--para_color_dark);
+}
+.p_s {
+  font-weight: 300;
+  font-size: var(--font_size_xs);
+  color: var(--para_color_light);
+}
 /* =============== Reusable Classes Ends =============== */
 
 /* =============== App Section Classes Starts =============== */
@@ -163,6 +232,42 @@ h6 {
 }
 
 /* =============== Navbar Section Ends =============== */
+
+/* =============== Hero Section Starts =============== */
+
+.hero_box {
+  min-height: var(--section_height);
+  background-color: var(--background_color_light);
+  align-items: center;
+}
+
+.hero_intro_box {
+  border: var(--test-border);
+
+  width: 60%;
+  gap: var(--gap_xl);
+}
+.hero_intro_box h1 {
+  color: var(--logo_color_dark);
+  font-size: 6.9rem;
+  font-weight: 900;
+}
+.hero_social_links_box a {
+  font-size: var(--font_size_xl);
+}
+
+.hero_dp_box {
+  border: var(--test-border);
+
+  width: 30%;
+}
+
+.hero_dp_box img {
+  border: var(--test-border);
+
+  width: 90%;
+}
+/* =============== Hero Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
