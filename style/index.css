@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+
+/* =============== Default CSS Reset Starts =============== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  line-height: 1.8;
+}
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.8;
+}
+a {
+  text-decoration: none;
+}
+
+/* =============== Default CSS Reset Ends =============== */
+
+/* =============== Root Variables Starts =============== */
+
+:root {
+  --test_border: 1px solid red;
+
+  --logo_color_dark: hsl(30, 100%, 60%);
+  --logo_color_light: hsl(60, 100%, 60%);
+
+  --primary_color: hsl(240, 100%, 60%);
+  --secondary_color: hsl(180, 100%, 60%);
+  --helper_color: hsl(300, 100%, 30%);
+
+  --background_color_dark: hsl(30, 100%, 75%);
+  --background_color_light: hsl(360, 100%, 90%);
+
+  --heading_color_dark: hsl(210, 30%, 30%);
+  --heading_color_light: hsl(270, 30%, 30%);
+  --para_color_dark: hsl(240, 30%, 60%);
+  --para_color_light: hsl(300, 30%, 60%);
+
+  --primary_border_radius: 0.3rem;
+  --secondary_border_radius: 1.2rem;
+
+  --primary_gradient: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  --secondary_gradient: linear-gradient(
+    to left,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+
+  --gap_xl: 3rem;
+  --gap_l: 2.4rem;
+  --gap_m: 1.8rem;
+  --gap_s: 1.2rem;
+  --gap_xs: 0.6rem;
+
+  --font_size_xl: 3rem;
+  --font_size_l: 2.1rem;
+  --font_size_m: 1.5rem;
+  --font_size_s: 1.2rem;
+  --font_size_xs: 0.9rem;
+
+  --navbar_height: 7.2rem;
+  --navbar_color_dark: hsl(210, 100%, 30%);
+  --navbar_color_light: hsl(210, 100%, 60%);
+  --navbar_background_color: hsl(210, 100%, 90%);
+
+  --section_padding: 1.2rem 4.8rem;
+  --section_height: calc(100vh - var(--navbar_height));
+}
+
+/* =============== Root Variables Ends =============== */
+
+/* =============== Reusable Classes Starts =============== */
+
+.bt {
+  border: var(--test_border);
+}
+.w_100 {
+  width: 100%;
+}
+.box {
+  border: var(--test_border);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.box_center {
+  border: var(--test_border);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col {
+  flex-direction: column;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.gap_l {
+  gap: var(--gap_l);
+}
+.gap_m {
+  gap: var(--gap_m);
+}
+.gap_s {
+  gap: var(--gap_s);
+}
+.gap_xs {
+  gap: var(--gap_xs);
+}
+.text_center {
+  text-align: center;
+}
+
+.h_l {
+  font-weight: 700;
+  font-size: var(--font_size_l);
+  color: var(--heading_color_dark);
+}
+.h_m {
+  font-weight: 600;
+  font-size: var(--font_size_m);
+  color: var(--heading_color_light);
+}
+.h_s {
+  font-weight: 500;
+  font-size: var(--font_size_s);
+  color: var(--heading_color_dark);
+}
+.p_l {
+  font-weight: 700;
+  font-size: var(--font_size_m);
+  color: var(--para_color_dark);
+}
+.p_m {
+  font-weight: 500;
+  font-size: var(--font_size_s);
+  color: var(--para_color_light);
+}
+.p_s {
+  font-weight: 300;
+  font-size: var(--font_size_xs);
+  color: var(--para_color_light);
+}
+
+.primary_button {
+  border: none;
+  outline: none;
+  background: var(--primary_gradient);
+  width: 15rem;
+  padding: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 15%);
+  font-size: var(--font_size_m);
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: var(--primary_border_radius);
+  transition: all 0.3s linear;
+}
+.primary_button:hover,
+.primary_button:active {
+  box-shadow: 0 0 0.9rem var(--helper_color);
+}
+/* =============== Reusable Classes Ends =============== */
+
+/* =============== Main App Classes Starts =============== */
+
+.main_app_box {
+  background-color: var(--background_color_light);
+}
+
+.section_box {
+  border: var(--test_border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var(--gap_xl);
+  padding: var(--section_padding);
+}
+/* =============== Main App Classes Ends =============== */
+
+/* =============== Navbar Section Starts =============== */
+
+.navbar_box {
+  height: var(--navbar_height);
+  background-color: var(--navbar_background_color);
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 69;
+}
+
+.nav_logo_link {
+  text-transform: uppercase;
+  font-size: var(--font_size_l);
+  padding: 0.3rem 1.2rem;
+  color: var(--logo_color_dark);
+  background-color: var(--logo_color_light);
+  border: 0.3rem solid var(--logo_color_dark);
+  border-radius: var(--primary_border_radius);
+  transition: all 0.3s linear;
+}
+.nav_logo_link:hover,
+.nav_logo_link:active {
+  color: var(--logo_color_light);
+  background-color: var(--logo_color_dark);
+  border: 0.3rem solid var(--logo_color_light);
+}
+.nav_menu_box {
+}
+
+.nav_link {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--font_size_m);
+  font-weight: 500;
+  color: var(--navbar_color_dark);
+  transition: all 0.3s linear;
+}
+.nav_link:hover,
+.nav_link:active {
+  color: var(--navbar_color_light);
+}
+/* =============== Navbar Section Ends =============== */
+
+/* =============== Footer Section Starts =============== */
+
+/* =============== Footer Section Ends =============== */
+
+.hero_section {
+  min-height: var(--section_height);
+  background-color: var(--background_color_dark);
+  align-items: center;
+}
+
+.hero_intro_box {
+  width: 60%;
+  gap: var(--gap_xl);
+}
+.hero_intro_box h1 {
+  font-weight: 900;
+  font-size: 6.9rem;
+  color: var(--logo_color_dark);
+}
+
+.hero_social_links {
+  gap: var(--gap_xl);
+}
+.hero_social_links a {
+  font-size: var(--font_size_xl);
+}
+.hero_dp_box {
+  width: 30%;
+}
+
+.hero_dp_box img {
+  width: 90%;
+}
+
+/* =============== About Me Section Starts =============== */
+
+.about_section {
+  min-height: var(--section_height);
+  margin-top: var(--navbar_height);
+}
+
+.section_heading {
+  width: 100%;
+}
+.section_heading h2 {
+  font-weight: 900;
+  font-size: var(--font_size_xl);
+  margin-bottom: var(--gap_s);
+  position: relative;
+}
+.section_heading h2::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 1rem;
+  width: 21rem;
+  height: 0.3rem;
+  background: var(--secondary_gradient);
+}
+.section_heading h2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: var(--primary_gradient);
+}
+
+.about_background_box,
+.about_skills_box {
+  width: 48%;
+}
+
+.about_card {
+}
+
+.skill_card {
+}
+
+.skill_rating {
+  width: 100%;
+  height: 1.2rem;
+  padding-right: 0.6rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-shadow: 0 0 0.3rem var(--helper_color);
+  background-color: var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+  position: relative;
+}
+.skill_rating::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary_gradient);
+  border-radius: var(--secondary_border_radius);
+}
+.skill_1::before {
+  width: 90%;
+}
+.skill_2::before {
+  width: 75%;
+}
+.skill_3::before {
+  width: 65%;
+}
+.skill_4::before {
+  width: 85%;
+}
+.skill_5::before {
+  width: 75%;
+}
+.skill_6::before {
+  width: 60%;
+}
+/* =============== About Me Section Ends =============== */
+
+/* =============== My Projects Section Starts =============== */
+
+.projects_section {
+  min-height: var(--section_height);
+  margin-top: var(--navbar_height);
+}
+
+.projects_list_box {
+  width: 100%;
+}
+
+.project_card {
+  width: 30%;
+  align-self: stretch;
+  justify-content: flex-start;
+  background-color: var(--background_color_dark);
+  padding: 1.2rem;
+  border-radius: var(--secondary_border_radius);
+}
+.project_card:hover {
+  box-shadow: 0 0 0.6rem var(--helper_color);
+}
+/* =============== My Projects Section Ends =============== */
+
+/* =============== Footer Section Starts =============== */
+
+/* =============== Footer Section Ends =============== */
