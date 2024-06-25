@@ -168,11 +168,12 @@ a {
   outline: none;
   cursor: pointer;
   background: var(--primary_gradient);
-  width: 15rem;
-  padding: 0.3rem;
+  width: 21rem;
+  height: 3.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: var(--gap_s);
   color: hsl(0, 0%, 15%);
   font-size: var(--font_size_m);
   text-transform: uppercase;
@@ -563,6 +564,86 @@ a {
   text-decoration: underline;
 }
 /* =============== Testimonials Section Ends =============== */
+
+/* =============== Freelance Banner Section Starts =============== */
+
+.freelance_banner {
+  background: url("../images/freelance.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  position: relative;
+}
+.freelance_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background_color_dark);
+  opacity: 0.6;
+}
+.freelance_content_box {
+  padding: 4.5rem 0;
+  position: relative;
+  gap: var(--gap_xl);
+}
+.freelance_content_box h2 {
+  font-size: var(--font_size_xl);
+  color: var(--heading_color_dark);
+}
+.freelance_content_box h2 span {
+  color: springgreen;
+}
+
+.freelance_content_box p {
+  font-size: var(--font_size_m);
+  color: var(--heading_color_dark);
+}
+
+/* =============== Freelance Banner Section Ends =============== */
+
+/* =============== Contact Me Section Starts =============== */
+
+.contact_section {
+  min-height: var(--section_height);
+  margin-top: var(--navbar_height);
+}
+
+.contact_info_box,
+.contact_form_box {
+  width: 48%;
+}
+
+.contact_card {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap_s);
+}
+.contact_me_icon {
+  font-size: var(--font_size_l);
+}
+.contact_card iframe {
+  width: 100%;
+  height: 27rem;
+  border: 0.3rem solid var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+}
+
+.contact_form_box input,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 0.21rem solid var(--helper_color);
+  background-color: var(--background_color_dark);
+  border-radius: var(--primary_border_radius);
+  font-size: var(--font_size_m);
+  color: var(--para_color_dark);
+  outline: none;
+}
+/* =============== Contact Me Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
