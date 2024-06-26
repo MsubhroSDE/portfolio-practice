@@ -6,6 +6,7 @@
     <title>Subhro Mukherjee</title>
 
     <link rel="stylesheet" href="style/index.css" />
+    <script defer src="script/index.js"></script>
 
     <!-- Link Swiper's CSS -->
     <link
@@ -313,64 +314,125 @@ My Blogs Section Starts
         </div>
 
         <div class="blogs_filter_box box_center gap_l">
-          <button class="primary_button">All Blogs</button>
-          <button class="primary_button">Technology</button>
-          <button class="primary_button">Productivity</button>
+          <button class="primary_button" onclick="handleBlogFilterClick('all')">
+            All Blogs
+          </button>
+          <button
+            class="primary_button"
+            onclick="handleBlogFilterClick('productivity')"
+          >
+            Technology
+          </button>
+          <button
+            class="primary_button"
+            onclick="handleBlogFilterClick('technology')"
+          >
+            Productivity
+          </button>
         </div>
 
         <div class="blogs_list_box box wrap gap_l">
-          <div class="blog_card box col gap_m">
-            <img src="images/freelance.jpg" alt="Thumbnail of the blog." />
+          <div class="productivity blog_card box col gap_m">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ft4imxvmgmqc69mkw4vtc.png"
+              alt="Thumbnail of the blog : Tips for Effective Communication in Remote Developer Jobs."
+            />
             <h3 class="h_m text_center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam.
+              Tips for Effective Communication in Remote Developer Jobs
             </h3>
 
-            <a href="" class="blog_overlay h_m">Continue Reading . . .</a>
+            <a
+              href="https://dev.to/msubhro/tips-for-effective-communication-in-remote-developer-jobs-3mm"
+              target="_blank"
+              class="blog_overlay h_m"
+              >Continue Reading . . .</a
+            >
           </div>
 
-          <div class="blog_card box col gap_m">
-            <img src="images/freelance.jpg" alt="Thumbnail of the blog." />
+          <div class="technology blog_card box col gap_m">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fbt30l6vnfkwf48ry0g1r.png"
+              alt="Thumbnail of the blog : Enhancing Performance in Your React Application."
+            />
             <h3 class="h_m text_center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam.
+              Enhancing Performance in Your React Application
             </h3>
 
-            <a href="" class="blog_overlay h_m">Continue Reading . . .</a>
+            <a
+              href="https://dev.to/msubhro/enhancing-performance-in-your-react-application-m3c"
+              target="_blank"
+              class="blog_overlay h_m"
+              >Continue Reading . . .</a
+            >
           </div>
 
-          <div class="blog_card box col gap_m">
-            <img src="images/freelance.jpg" alt="Thumbnail of the blog." />
+          <div class="productivity blog_card box col gap_m">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fpwbgbuzft5sknl8ilz9f.png"
+              alt="Thumbnail of the blog : Best Practices and Productivity Hacks for Efficient Developers."
+            />
             <h3 class="h_m text_center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam.
+              Best Practices and Productivity Hacks for Efficient Developers
             </h3>
 
-            <a href="" class="blog_overlay h_m">Continue Reading . . .</a>
+            <a
+              href="https://dev.to/msubhro/best-practices-and-productivity-hacks-for-efficient-developers-712"
+              target="_blank"
+              class="blog_overlay h_m"
+              >Continue Reading . . .</a
+            >
           </div>
 
-          <div class="blog_card box col gap_m">
-            <img src="images/freelance.jpg" alt="Thumbnail of the blog." />
+          <div class="technology blog_card box col gap_m">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fuhar2e09zopaaj7mmvdc.png"
+              alt="Thumbnail of the blog : Redux-Toolkit vs React Context API: Mastering State Management in React."
+            />
             <h3 class="h_m text_center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam.
+              Redux-Toolkit vs React Context API: Mastering State Management in
+              React
             </h3>
 
-            <a href="" class="blog_overlay h_m">Continue Reading . . .</a>
+            <a
+              href="https://dev.to/msubhro/redux-toolkit-vs-react-context-api-mastering-state-management-in-react-2o40"
+              target="_blank"
+              class="blog_overlay h_m"
+              >Continue Reading . . .</a
+            >
           </div>
 
-          <div class="blog_card box col gap_m">
-            <img src="images/freelance.jpg" alt="Thumbnail of the blog." />
+          <div class="technology blog_card box col gap_m">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fq9d4np9ffcaskyffxeuv.png"
+              alt="Thumbnail of the blog : Master Async/Await in JavaScript: Tips and Tricks for Pros."
+            />
             <h3 class="h_m text_center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam.
+              Master Async/Await in JavaScript: Tips and Tricks for Pros
             </h3>
 
-            <a href="" class="blog_overlay h_m">Continue Reading . . .</a>
+            <a
+              href="https://dev.to/msubhro/master-asyncawait-in-javascript-tips-and-tricks-for-pros-dcd"
+              target="_blank"
+              class="blog_overlay h_m"
+              >Continue Reading . . .</a
+            >
           </div>
 
-          <div class="blog_card box col gap_m">
-            <img src="images/freelance.jpg" alt="Thumbnail of the blog." />
+          <div class="technology blog_card box col gap_m">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Ft8l8ct5l3nri2bwphz35.png"
+              alt="Thumbnail of the blog : Enhance Your React Apps: Best Practices for Reusable Custom Hooks."
+            />
             <h3 class="h_m text_center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam.
+              Enhance Your React Apps: Best Practices for Reusable Custom Hooks
             </h3>
 
-            <a href="" class="blog_overlay h_m">Continue Reading . . .</a>
+            <a
+              href="https://dev.to/msubhro/enhance-your-react-apps-best-practices-for-reusable-custom-hooks-2c3e"
+              target="_blank"
+              class="blog_overlay h_m"
+              >Continue Reading . . .</a
+            >
           </div>
         </div>
       </section>
@@ -883,22 +945,16 @@ Icons : https://ionic.io/ionicons Starts
 Icons Ends
 ============================================= -->
 
-    <!-- Swiper JS -->
+    <!-- =============================================
+Swiper JS : https://swiperjs.com/demos "Slides per view" Starts 
+
+Example : https://codesandbox.io/p/sandbox/tgc8gm?file=%2Findex.html 
+============================================= -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        autoplay: {
-          delay: 6000,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-      });
-    </script>
+    <!-- =============================================
+Swiper JS : https://swiperjs.com/demos "Slides per view" Starts 
+============================================= -->
   </body>
 </html>
