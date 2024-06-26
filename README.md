@@ -10,5 +10,8 @@ This Website is build using HTML, CSS and VanillaJS.
 
 # Navbar
 
-1.1 right - subhro mukherjee logo
-1.2 left - about, project & contact
+# 26-06-2024
+
+Took 6 hrs failed achieve responsiveness and color finalization
+
+will restart again for 6hrs completion
