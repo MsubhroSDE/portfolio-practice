@@ -43,7 +43,7 @@ a {
 
   --primary_color: hsl(210, 100%, 60%);
   --secondary_color: hsl(180, 100%, 60%);
-  --helper_color: hsl(150, 100%, 60%);
+  --helper_color: hsl(15, 100%, 60%);
   --white_color: hsl(0, 100%, 97%);
   --black_color: hsl(0, 100%, 3%);
 
@@ -52,8 +52,19 @@ a {
   --para_color_dark: hsl(300, 100%, 60%);
   --para_color_light: hsl(330, 100%, 60%);
 
-  --background_color_dark: hsl(90, 100%, 60%);
-  --background_color_light: hsl(120, 100%, 60%);
+  --background_color_dark: hsl(60, 100%, 75%);
+  --background_color_light: hsl(120, 100%, 90%);
+
+  --primary_gradient: linear-gradient(
+    to right,
+    var(--primary_color),
+    var(--secondary_color)
+  );
+  --secondary_gradient: linear-gradient(
+    to left,
+    var(--primary_color),
+    var(--secondary_color)
+  );
 
   --primary_border_radius: 0.3rem;
   --secondary_border_radius: 1.2rem;
@@ -127,18 +138,38 @@ a {
 }
 .p_l {
   font-weight: 700;
-  font-size: var(--font_size_l);
+  font-size: var(--font_size_m);
   color: var(--para_color_dark);
 }
 .p_m {
   font-weight: 500;
-  font-size: var(--font_size_m);
+  font-size: var(--font_size_s);
   color: var(--para_color_dark);
 }
 .p_s {
   font-weight: 300;
-  font-size: var(--font_size_s);
+  font-size: var(--font_size_xs);
   color: var(--para_color_light);
+}
+
+.primary_button {
+  border: none;
+  outline: none;
+  width: 18rem;
+  height: 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_s);
+  background: var(--primary_gradient);
+  border-radius: var(--primary_border_radius);
+  font-size: var(--font_size_m);
+  font-weight: bold;
+  color: var(--black_color);
+}
+.primary_button:hover,
+.primary_button:active {
+  box-shadow: 0 0 0.9rem var(--helper_color);
 }
 /* =============== Reusable Classes Ends =============== */
 
@@ -154,10 +185,46 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   gap: var(--gap_xl);
   padding: var(--section_padding);
 }
 
+.section_heading {
+  border: var(--test_border);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_l);
+}
+.section_heading h2 {
+  font-weight: 900;
+  font-size: var(--font_size_xl);
+  color: var(--heading_color_dark);
+  position: relative;
+}
+
+.section_heading h2::before {
+  content: "";
+  position: absolute;
+  top: 108%;
+  left: 0.9rem;
+  width: 21rem;
+  height: 0.6rem;
+  background: var(--secondary_gradient);
+  border-radius: var(--secondary_border_radius);
+}
+.section_heading h2::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--primary_gradient);
+  border-radius: 50%;
+}
 /* =============== App Section Classes Ends =============== */
 
 /* =============== Navbar Section Starts =============== */
@@ -208,10 +275,6 @@ a {
 
 /* =============== Hero Section Starts =============== */
 
-/* =============== Hero Section Ends =============== */
-
-/* =============== About Me Section Starts =============== */
-
 .hero_section {
   background-color: var(--background_color_dark);
   min-height: var(--section_height);
@@ -231,6 +294,13 @@ a {
   font-size: 6.9rem;
   color: var(--logo_color_dark);
 }
+.hero_intro_box h2 {
+  font-size: var(--font_size_xl);
+}
+.hero_intro_box h3 {
+  font-size: var(--font_size_l);
+}
+
 .hero_social_links_box {
   display: flex;
   gap: var(--gap_xl);
@@ -243,11 +313,7 @@ a {
 .hero_dp_box {
   width: 30%;
   padding: 0.69rem;
-  background: linear-gradient(
-    to right,
-    var(--primary_color),
-    var(--secondary_color)
-  );
+  background: var(--primary_gradient);
   overflow: hidden;
   border-radius: 51% 63% 60% 54% / 48% 42% 60% 54%;
   animation: wave_animation 3s linear infinite;
@@ -258,6 +324,108 @@ a {
   border-radius: 51% 63% 60% 54% / 48% 42% 60% 54%;
   animation: wave_animation 5s linear infinite;
 }
+
+/* =============== Hero Section Ends =============== */
+
+/* =============== About Me Section Starts =============== */
+
+.about_section {
+  margin-top: var(--navbar_height);
+  min-height: var(--section_height);
+}
+
+.about_intro_box,
+.about_skills_box {
+  border: var(--test_border);
+
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+
+.intro_text_box,
+.experience_box,
+.education_box,
+.skills_box {
+  border: var(--test_border);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+
+.about_card {
+  border: var(--test_border);
+
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap_xs);
+}
+
+.skill_card {
+  border: var(--test_border);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_xs);
+}
+
+.skill_rating {
+  width: 100%;
+  height: 1.2rem;
+  background-color: var(--white_color);
+  box-shadow: 0 0 0.3rem var(--helper_color);
+  border-radius: var(--secondary_border_radius);
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.6rem;
+  position: relative;
+}
+
+.skill_rating::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary_gradient);
+  border-radius: var(--secondary_border_radius);
+}
+
+.skill_1::before {
+  width: 90%;
+}
+.skill_2::before {
+  width: 75%;
+}
+.skill_1::before {
+  width: 90%;
+}
+.skill_3::before {
+  width: 65%;
+}
+.skill_4::before {
+  width: 85%;
+}
+.skill_5::before {
+  width: 75%;
+}
+.skill_6::before {
+  width: 60%;
+}
+/* =============== About Me Section Ends =============== */
+
+/* =============== Footer Section Starts =============== */
+
+/* =============== Footer Section Ends =============== */
+
+/* =============== Animations Section Starts =============== */
 
 @keyframes wave_animation {
   0% {
@@ -276,8 +444,5 @@ a {
     border-radius: 51% 63% 60% 54% / 48% 42% 60% 54%;
   }
 }
-/* =============== About Me Section Ends =============== */
 
-/* =============== Footer Section Starts =============== */
-
-/* =============== Footer Section Ends =============== */
+/* =============== Animations Section Ends =============== */
