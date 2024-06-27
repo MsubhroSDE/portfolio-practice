@@ -10,8 +10,12 @@ This Website is build using HTML, CSS and VanillaJS.
 
 # Navbar
 
-# 26-06-2024
+# 25-06-2024
 
 Took 6 hrs failed achieve responsiveness and color finalization
 
 will restart again for 6hrs completion
+
+# 26-06-2024
+
+Today spend 2 hrs on this project
