@@ -233,6 +233,11 @@ a {
   height: var(--navbar_height);
   background: var(--navbar_background_color);
   align-items: center;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: all 0.9s linear;
 }
 
 .nav_logo_link {
@@ -420,6 +425,41 @@ a {
   width: 60%;
 }
 /* =============== About Me Section Ends =============== */
+
+/* =============== My Projects Section Starts =============== */
+
+.projects_section {
+  margin-top: var(--navbar_height);
+  min-height: var(--section_height);
+}
+
+.projects_list_box {
+  border: var(--test_border);
+  width: 100%;
+  min-height: 63vh;
+  align-self: stretch;
+
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap_l);
+}
+
+.project_card {
+  border: var(--test_border);
+
+  width: 30%;
+  padding: 1.2rem;
+  background-color: var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+.project_card:hover {
+  box-shadow: 0 0 0.3rem var(--helper_color);
+}
+/* =============== My Projects Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
