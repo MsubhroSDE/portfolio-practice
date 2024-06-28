@@ -88,6 +88,11 @@ a {
 
   --section_padding: 1.2rem 4.8rem;
   --section_height: calc(100vh - var(--navbar_height));
+
+  --footer_color_dark: hsl(300, 100%, 60%);
+  --footer_color_light: hsl(90, 100%, 60%);
+  --footer_background_color: hsl(240, 15%, 30%);
+  --footer_heading_color: hsl(150, 100%, 60%);
 }
 
 /* =============== Root Variables Ends =============== */
@@ -618,6 +623,57 @@ a {
 
 /* =============== My Services Section Ends =============== */
 
+/* =============== Testimonials Section Starts =============== */
+
+.testimonial_section {
+  margin-top: var(--navbar_height);
+}
+.testimonial_list_box {
+  width: 100%;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  padding: 3rem;
+}
+
+.testimonial_card,
+.testimonial_message,
+.testimonial_author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonial_card {
+  border: var(--test_border);
+
+  padding: 3rem;
+  gap: var(--gap_xl);
+  background: var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+}
+.testimonial_card:hover {
+  box-shadow: 0 0 0.3rem var(--helper_color);
+}
+.testimonial_message {
+  gap: var(--gap_m);
+}
+
+.testimonial_author {
+  gap: var(--gap_s);
+}
+.testimonial_author img {
+  display: inline-block;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 0.15rem solid var(--helper_color);
+}
+/* =============== Testimonials Section Ends =============== */
+
 /* =============== Freelance Banner Section Starts =============== */
 
 .freelance_banner {
@@ -659,8 +715,158 @@ a {
 }
 /* =============== Freelance Banner Section Ends =============== */
 
+/* =============== Contact Me Section Starts =============== */
+
+.contact_section {
+  margin-top: var(--navbar_height);
+  min-height: var(--section_height);
+}
+
+.contact_info_box,
+.contact_form_box {
+  border: var(--test_border);
+
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_l);
+}
+
+.contact_info_card {
+  display: flex;
+  gap: var(--gap_l);
+}
+.contact_info_address_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+.contact_info_address_box iframe {
+  width: 100%;
+  height: 45vh;
+  border: 0.21rem solid var(--background_color_dark);
+}
+.contact_form_input_box {
+  width: 100%;
+}
+.contact_form_input_box input,
+textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  outline: none;
+  font-size: var(--font_size_m);
+  color: var(--para_color_dark);
+  border: 0.21rem solid var(--secondary_color);
+  background: var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+}
+.contact_form_input_box input:focus,
+textarea:focus {
+  border: 0.21rem solid var(--primary_color);
+}
+
+.contact_form_input_box textarea {
+  height: 21vh;
+}
+
+/* =============== Contact Me Section Ends =============== */
+
 /* =============== Footer Section Starts =============== */
 
+.footer_section {
+  padding-top: 3rem;
+  background-color: var(--footer_background_color);
+}
+
+.footer_intro_box,
+.footer_quick_links_box,
+.footer_service_links_box,
+.footer_address_info_box,
+.footer_credits_box {
+  border: var(--test_border);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+}
+
+.footer_intro_box {
+  width: 27%;
+}
+.footer_intro_box h3 {
+  font-size: var(--font_size_xl);
+  color: var(--logo_color_dark);
+}
+.footer_intro_box p {
+  color: var(--logo_color_light);
+  text-align: justify;
+}
+
+.footer_quick_links_box {
+  width: 21%;
+}
+.footer_service_links_box {
+  width: 21%;
+}
+.footer_address_info_box {
+  width: 21%;
+}
+
+.footer_heading {
+  color: var(--footer_heading_color);
+}
+.footer_links_box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_s);
+}
+.footer_links_box a,
+address {
+  display: flex;
+  gap: var(--gap_s);
+  align-items: center;
+  color: var(--footer_color_dark);
+  transition: all 0.3s linear;
+}
+.footer_links_box a:hover,
+.footer_links_box a:active {
+  color: var(--footer_color_light);
+}
+.footer_social_links {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap_s);
+}
+.footer_social_links a {
+  font-size: var(--font_size_l);
+}
+.footer_credits_box {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer_credits_box h5 {
+  color: var(--footer_heading_color);
+  display: flex;
+  align-items: center;
+  gap: var(--gap_xs);
+}
+.footer_credits_box h5 span {
+  font-size: var(--font_size_l);
+  color: red;
+}
+.footer_credits_box h5 a {
+  color: var(--logo_color_dark);
+}
+.footer_credits_box h5 a:hover,
+.footer_credits_box h5 a:active {
+  color: var(--logo_color_light);
+}
+.footer_credits_box p {
+  color: var(--footer_color_light);
+}
 /* =============== Footer Section Ends =============== */
 
 /* =============== Animations Section Starts =============== */
