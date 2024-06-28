@@ -618,6 +618,47 @@ a {
 
 /* =============== My Services Section Ends =============== */
 
+/* =============== Freelance Banner Section Starts =============== */
+
+.freelance_banner {
+  background-image: url("../images/freelance.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+.freelance_banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background_color_dark);
+  opacity: 0.72;
+}
+.freelance_banner_content_box {
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_xl);
+}
+.freelance_banner_content_box h3 {
+  color: var(--black_color);
+  font-size: var(--font_size_xl);
+}
+.freelance_banner_content_box h3 span {
+  color: springgreen;
+}
+.freelance_banner_content_box p {
+  color: var(--black_color);
+}
+/* =============== Freelance Banner Section Ends =============== */
+
 /* =============== Footer Section Starts =============== */
 
 /* =============== Footer Section Ends =============== */
