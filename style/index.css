@@ -120,7 +120,9 @@ a {
 .width_100 {
   width: 100%;
 }
-
+.text_center {
+  text-align: center;
+}
 .h_l {
   font-weight: 700;
   font-size: var(--font_size_l);
@@ -155,6 +157,9 @@ a {
 .primary_button {
   border: none;
   outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
   width: 18rem;
   height: 4.5rem;
   display: flex;
@@ -237,6 +242,7 @@ a {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 69;
   transition: all 0.9s linear;
 }
 
@@ -460,6 +466,84 @@ a {
   box-shadow: 0 0 0.3rem var(--helper_color);
 }
 /* =============== My Projects Section Ends =============== */
+
+/* =============== My Blogs Section Starts =============== */
+
+.blogs_section {
+  margin-top: var(--navbar_height);
+  min-height: var(--section_height);
+}
+.blog_filter_box {
+  border: var(--test_border);
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_l);
+}
+.blog_filter_box button {
+  transition: all 0.3s linear;
+}
+.blog_filter_box button:hover,
+.blog_filter_box button:active {
+  transform: translateY(-1.2rem);
+}
+.blogs_list_box {
+  border: var(--test_border);
+
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--gap_l);
+}
+
+.blog_card {
+  border: var(--test_border);
+
+  width: 30%;
+  height: 30vh;
+  overflow: hidden;
+  background-color: var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap_m);
+
+  position: relative;
+}
+.blog_card:hover {
+  box-shadow: 0 0 0.3rem var(--helper_color);
+}
+.blog_card img {
+  width: 100%;
+  height: 60%;
+}
+
+.blog_card_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+  background: var(--primary_gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black_color);
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.blog_card:hover .blog_card_overlay {
+  transform: translateY(0);
+  opacity: 0.72;
+}
+/* =============== My Blogs Section Ends =============== */
 
 /* =============== Footer Section Starts =============== */
 
