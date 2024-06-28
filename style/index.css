@@ -545,6 +545,79 @@ a {
 }
 /* =============== My Blogs Section Ends =============== */
 
+/* =============== My Services Section Starts =============== */
+
+.services_section {
+  margin-top: var(--navbar_height);
+  min-height: var(--section_height);
+}
+
+.services_list_box {
+  border: var(--test_border);
+
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--gap_l);
+}
+
+.service_card {
+  border: var(--test_border);
+
+  width: 30%;
+  padding: 1.2rem;
+  background-color: var(--background_color_dark);
+  border-radius: var(--secondary_border_radius);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--gap_m);
+}
+.service_card:hover {
+  box-shadow: 0 0 0.3rem var(--helper_color);
+}
+.service_icon {
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 1.2rem;
+  overflow: hidden;
+  position: relative;
+  color: var(--heading_color_light);
+  background: var(--background_color_light);
+  border-radius: 51% 63% 60% 54% / 48% 42% 60% 54%;
+  animation: wave_animation 3s linear infinite;
+}
+.service_icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  background: transparent;
+  border: 0.21rem solid var(--primary_color);
+  border-radius: 51% 63% 60% 54% / 48% 42% 60% 54%;
+  animation: wave_animation 5s linear infinite;
+}
+.service_icon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+  background: transparent;
+  border: 0.15rem solid var(--secondary_color);
+  border-radius: 51% 63% 60% 54% / 48% 42% 60% 54%;
+  animation: wave_animation 7s linear infinite;
+}
+
+/* =============== My Services Section Ends =============== */
+
 /* =============== Footer Section Starts =============== */
 
 /* =============== Footer Section Ends =============== */
