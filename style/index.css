@@ -109,6 +109,7 @@ a {
   background: linear-gradient(
     to bottom,
     var(--navbar_background_color),
+    var(--background_color_dark),
     var(--footer_background_color)
   );
 }
@@ -213,6 +214,7 @@ a {
   border-radius: var(--primary_border_radius);
   font-size: var(--font_size_m);
   font-weight: bold;
+  text-transform: uppercase;
   color: var(--black_color);
 }
 .primary_button:hover,
@@ -274,6 +276,48 @@ a {
   border-radius: 50%;
 }
 /* =============== App Section Classes Ends =============== */
+
+/* =============== Social Links CSS Starts =============== */
+
+.gitHub {
+  color: hsl(210, 12%, 16%);
+}
+.gitHub:hover,
+.gitHub:active {
+  color: hsl(210, 12%, 31%);
+}
+
+.linkedin {
+  color: hsl(201, 100%, 35%);
+}
+.linkedin:hover,
+.linkedin:active {
+  color: hsl(201, 100%, 48%);
+}
+
+.facebook {
+  color: hsl(214, 89%, 52%);
+}
+.facebook:hover,
+.facebook:active {
+  color: hsl(214, 89%, 67%);
+}
+
+.twitter {
+  color: hsl(203, 89%, 53%);
+}
+.twitter:hover,
+.twitter:active {
+  color: hsl(203, 89%, 68%);
+}
+.whatsapp {
+  color: hsl(142, 70%, 49%);
+}
+.whatsapp:hover,
+.whatsapp:active {
+  color: hsl(142, 70%, 64%);
+}
+/* =============== Social Links CSS Ends =============== */
 
 /* =============== Navbar Section Starts =============== */
 
