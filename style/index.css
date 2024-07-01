@@ -97,6 +97,44 @@ a {
 
 /* =============== Root Variables Ends =============== */
 
+/* =============== Custom Scrollbar CSS Starts =============== */
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to bottom,
+    var(--navbar_background_color),
+    var(--footer_background_color)
+  );
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    to bottom,
+    var(--navbar_background_color),
+    var(--footer_background_color)
+  );
+  border-radius: var(--secondary_border_radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: grab;
+  box-shadow: inset 0 0 0.6rem var(--primary_color);
+}
+::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+  box-shadow: inset 0 0 0.6rem var(--secondary_color);
+}
+
+/* =============== Custom Scrollbar CSS Ends =============== */
+
 /* =============== Reusable Classes Starts =============== */
 .box {
   display: flex;
@@ -844,6 +882,7 @@ address {
 }
 .footer_credits_box {
   width: 100%;
+  gap: var(--gap_xs);
   justify-content: center;
   align-items: center;
 }
